@@ -199,7 +199,7 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
 }
 .trip-inner {
   text-align: center;
@@ -208,8 +208,11 @@ img {
   border-radius: 50%;
   background: #fff;
   display: inline-block;
-  padding: 15px 22px;
+  padding: 10px 19px;
   place-items: center;
+}
+.trip-inner h3 > i {
+  font-size: 24px;
 }
 .trip-inner h2 {
   font-size: 22px;
@@ -301,6 +304,12 @@ img {
   border: 2px solid;
   border-top: 0px !important;
   padding: 20px;
+}
+.tab1 h2 {
+  font-size: 20px;
+}
+.tab2 h2 {
+  font-size: 20px;
 }
 .accordion-button::after {
   background-image: url(/assets/img/images/BLACK\ Vector.svg) !important;
@@ -732,7 +741,7 @@ ul {
   color: #000 !important;
   padding: 10px 10px 15px 10px;
 }
-..trip-nav button:hover {
+.trip-nav button:hover {
   color: #00b3ff !important;
 }
 .tab-con {
