@@ -203,7 +203,7 @@ img {
   padding: 0px 20px;
 }
 .nav-link.active {
-  color: #0449c4 !important;
+  color: #fff !important;
   border-bottom: 2px solid #0449c4;
   transition: 0.1s ease-in;
 }
@@ -212,7 +212,6 @@ img {
 }
 .nav-link:hover {
   color: #0449c4 !important;
-  border-bottom: 2px solid #0449c4;
 }
 .nav-btn {
   margin-right: 80px;
