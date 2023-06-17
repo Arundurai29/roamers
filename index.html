@@ -351,6 +351,7 @@
   display: flex;
   width: 100%;
   height: 100%;
+  transition: transform 0.4s ease;
 }
 
 .slider-item {
@@ -376,20 +377,16 @@
 }
 .cust-inner{
   position: absolute;
-    top: 0;
+    bottom: 0;
     padding: 20px;
-    right: 0;
-    padding-top: 257px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(12, 12, 12, 0.4);
-    color: #fff;
+    left: 0;
   /* transform: translateY(100%);
   transition: opacity 0.3s ease, transform 0.3s ease; */
 }
 .silder-pad{
   margin: 20px 20px;
   position: relative;
+  overflow: hidden;
 }
 /* .silder-pad :hover .cust-inner{
   opacity: 1;
@@ -397,6 +394,22 @@
 } */
 .slider-item2 img{
 height: 350px;
+transition: 0.3s ease-in-out;
+
+}
+.slid-img::after{
+  background-color: rgba(12, 12, 12, 0.4);
+    color: #fff;
+    position: absolute;
+    inset: 0;
+    content: "";
+
+}
+.slid-img{
+  transition: 0.3s ease-in-out;
+}
+.slid-img:hover {
+transform: scale(1.3);
 }
 .cust-inner h3{
  font-size: 16px;
@@ -1133,7 +1146,9 @@ Incredible people, unforgettable experiences, 'pinch yourself moments' - every M
                 <div class="slider-item2">
                   <div class="silder-pad">
                   <a href="#">
-                  <img src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
+                    </div>
                   <div class="cust-inner">
                     <h3>Timeless Charm
                      </h3>
@@ -1145,7 +1160,9 @@ Incredible people, unforgettable experiences, 'pinch yourself moments' - every M
                 <div class="slider-item2">
                   <div class="silder-pad">
                   <a href="#">
-                  <img src="assets/img/images/similer-img1.webp" alt="roamers-Gallery">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img1.webp" alt="roamers-Gallery">
+                    </div>
                   <div class="cust-inner">
                     <h3>Timeless Charm
                      </h3>
@@ -1157,7 +1174,51 @@ Incredible people, unforgettable experiences, 'pinch yourself moments' - every M
                 <div class="slider-item2">
                   <div class="silder-pad">
                   <a href="#">
-                  <img src="assets/img/images/similer-img3.webp" alt="roamers-Gallery">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img3.webp" alt="roamers-Gallery">
+                    </div>
+                  <div class="cust-inner">
+                    <h3>Timeless Charm
+                     </h3>
+                    <h2> Thailand</h2>
+                  </div>
+                </a>
+              </div>
+                </div>
+                <div class="slider-item2">
+                  <div class="silder-pad">
+                  <a href="#">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
+                    </div>
+                  <div class="cust-inner">
+                    <h3>Timeless Charm
+                     </h3>
+                    <h2> Kerala</h2>
+                  </div>
+                </a>
+              </div>
+                </div>
+                <div class="slider-item2">
+                  <div class="silder-pad">
+                  <a href="#">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img1.webp" alt="roamers-Gallery">
+                    </div>
+                  <div class="cust-inner">
+                    <h3>Timeless Charm
+                     </h3>
+                    <h2> Andaman </h2>
+                  </div>
+                </a>
+              </div>
+                </div>
+                <div class="slider-item2">
+                  <div class="silder-pad">
+                  <a href="#">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img3.webp" alt="roamers-Gallery">
+                    </div>
                   <div class="cust-inner">
                     <h3>Timeless Charm
                      </h3>
@@ -1169,7 +1230,9 @@ Incredible people, unforgettable experiences, 'pinch yourself moments' - every M
                 <div class="slider-item2">
                   <div class="silder-pad">
                   <a href="#">
-                  <img src="assets/img/images/similer-img1.webp" alt="roamers-Gallery">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
+                    </div>
                   <div class="cust-inner">
                     <h3>Timeless Charm
                      </h3>
@@ -1181,7 +1244,9 @@ Incredible people, unforgettable experiences, 'pinch yourself moments' - every M
                 <div class="slider-item2">
                   <div class="silder-pad">
                   <a href="#">
-                  <img src="assets/img/images/similer-img3.webp" alt="roamers-Gallery">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
+                    </div>
                   <div class="cust-inner">
                     <h3>Timeless Charm
                      </h3>
@@ -1193,7 +1258,9 @@ Incredible people, unforgettable experiences, 'pinch yourself moments' - every M
                 <div class="slider-item2">
                   <div class="silder-pad">
                   <a href="#">
-                  <img src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
+                    </div>
                   <div class="cust-inner">
                     <h3>Timeless Charm
                      </h3>
@@ -1205,55 +1272,9 @@ Incredible people, unforgettable experiences, 'pinch yourself moments' - every M
                 <div class="slider-item2">
                   <div class="silder-pad">
                   <a href="#">
-                  <img src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
-                  <div class="cust-inner">
-                    <h3>Timeless Charm
-                     </h3>
-                    <h2> Vietnam</h2>
-                  </div>
-                </a>
-              </div>
-                </div>
-                <div class="slider-item2">
-                  <div class="silder-pad">
-                  <a href="#">
-                  <img src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
-                  <div class="cust-inner">
-                    <h3>Timeless Charm
-                     </h3>
-                    <h2> Vietnam</h2>
-                  </div>
-                </a>
-              </div>
-                </div>
-                <div class="slider-item2">
-                  <div class="silder-pad">
-                  <a href="#">
-                  <img src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
-                  <div class="cust-inner">
-                    <h3>Timeless Charm
-                     </h3>
-                    <h2> Vietnam</h2>
-                  </div>
-                </a>
-              </div>
-                </div>
-                <div class="slider-item2">
-                  <div class="silder-pad">
-                  <a href="#">
-                  <img src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
-                  <div class="cust-inner">
-                    <h3>Timeless Charm
-                     </h3>
-                    <h2> Vietnam</h2>
-                  </div>
-                </a>
-              </div>
-                </div>
-                <div class="slider-item2">
-                  <div class="silder-pad">
-                  <a href="#">
-                  <img src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
+                    </div>
                   <div class="cust-inner">
                     <h3>Timeless Charm
                      </h3>
@@ -1462,7 +1483,16 @@ sliders.forEach(function(slider) {
     sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
     updateButtonVisibility();
   }
+  function updateSliderPosition() {
+    sliderContainer.classList.add("slider-transition");
+    var position = -currentSlide * slideWidth;
+    sliderContainer.style.transform = `translateX(${position}px)`;
 
+    // Reset transition class after the transition is complete
+    setTimeout(function() {
+      sliderContainer.classList.remove("slider-transition");
+    }, 300);
+  }
   function updateButtonVisibility() {
     if (currentSlide === 0) {
       prevBtn.style.display = "none";
