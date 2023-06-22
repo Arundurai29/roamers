@@ -1,432 +1,1050 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- SEO Meta Description -->
-    <meta name="description" content="" />
-    <meta name="author" content="Themeland" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Title  -->
-    <title>Romers</title>
+  <!-- SEO Meta Description -->
+  <meta name="description" content="" />
+  <meta name="author" content="Themeland" />
 
-    <!-- Favicon  -->
-    <link rel="icon" href="assets/img/favicon.png" />
+  <!-- Title  -->
+  <title>Romers</title>
 
-    <!-- ***** All CSS Files ***** -->
-    <!-- ***** Font Asesome cdn ***** -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Style css -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Favicon  -->
+  <link rel="icon" href="assets/img/favicon.png" />
 
-    <!-- Responsive css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </head>
+  <!-- ***** All CSS Files ***** -->
+  <!-- ***** Font Asesome cdn ***** -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Style css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-  <body>
-    <!-- ***** Header Start ***** -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="assets/img/Logo/Roamers .png" alt="Romers-logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav main-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT US </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">PACKAGES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> DESTINATIONS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">BLOGS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT US</a>
-              </li>
-            </ul>
-          </div>
-          <div class="nav-button">
-            <a href="" class="nav-btn btn"><i class="fa-solid fa-user-group"></i> Register</a>
-          </div>
-        </div>
-      </nav>
-    <!-- ***** Header End ***** -->
-    <!-- ***** Welcome Area Start ***** -->
-    
-    <section class="trip-home">
+  <!-- Responsive css -->
+
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <style>
+    .trip-home {
+      background: url(assets/img/bg/ladakh-cover.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    .trip-about::before {
+      background: url(assets/img/images/dot1.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      content: "";
+      bottom: -45px;
+      left: -60px;
+      height: 100px;
+      width: 100px;
+    }
+
+    .travel-des::before {
+      background: url(assets/img/images/dot2.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      content: "";
+      top: 0;
+      right: -60px;
+      height: 100px;
+      width: 100px;
+    }
+
+    .travel-des {
+      padding: 30px;
+    }
+
+    .travel-des a {
+      width: 180px;
+    }
+
+    .accordion-button::after {
+      background-image: url(assets/img/images/arrow-down.svg) !important;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+      background-image: url(assets/img/images/arrow-up.svg) !important;
+      transform: rotate(-360deg) !important;
+    }
+
+    .why-us {
+      background: url(assets/img/images/sea-travel.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      padding: 60px 0px;
+    }
+
+    .why-us::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .why-para {
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 60px;
+    }
+
+    .why-us .trip-inner>h3 {
+      margin-bottom: 30px;
+      padding: 20px 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ***** Header Start ***** -->
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="assets/img/Logo/Roamers .png" alt="Romers-logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav main-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PACKAGES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> DESTINATIONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BLOGS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <a href="" class="nav-btn btn"><i class="fa-solid fa-user-group"></i> Register</a>
+      </div>
+    </div>
+  </nav>
+  <!-- ***** Header End ***** -->
+  <!-- ***** Welcome Area Start ***** -->
+
+  <section class="trip-home">
     <div class="container" style="  position: relative;">
-        <h1>Leh Ladakh Tour Packages</h1>
-        <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="trip-inner">
-                    <h3><i class="fa-solid fa-indian-rupee-sign"></i></h3>
-                    <p>Starting Price</p>
-                    <h2>₹9500 /-</h2>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="trip-inner">
-                    <h3><i class="fa-solid fa-stopwatch"></i></h3>
-                    <p>Duration</p>
-                    <h2>5 Days 4 Nights</h2>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="trip-inner">
-                    <h3><i class="fa-solid fa-location-dot"></i></h3>
-                    <p>Pickup & Drop</p>
-                    <h2>Manali</h2>
-                </div>
-            </div>
+      <h1>Kerala-God’s Own Place</h1>
+      <div class="row">
+        <div class="col-md-4 col-6">
+          <div class="trip-inner">
+            <h3><i class="fa-solid fa-indian-rupee-sign"></i></h3>
+            <p>Starting Price</p>
+            <h2>₹9500 /-</h2>
+          </div>
         </div>
+        <div class="col-md-4 col-6">
+          <div class="trip-inner">
+            <h3><i class="fa-solid fa-stopwatch"></i></h3>
+            <p>Duration</p>
+            <h2>5 Days 4 Nights</h2>
+          </div>
+        </div>
+        <div class="col-md-4 col-6 m-auto">
+          <div class="trip-inner">
+            <h3><i class="fa-solid fa-location-dot"></i></h3>
+            <p>Pickup & Drop</p>
+            <h2>Manali</h2>
+          </div>
+        </div>
+      </div>
     </div>
-    </section>
-
-      <!-- ***** Welcome Area end ***** -->
-
-       <!-- ***** Travel Desitination***** -->
-  <section class="Desitination">
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <img src="assets/img/images/adventurous.webp" alt="roamers-trip">
-        </div>
-        <div class="col-md-8" style="display: grid; place-items: center;">
-            <div class="travel-des">
-                <h2>
-                   Travel Desitination
-                </h2>
-                <h3>Over View of the Destination</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut la or em ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut la or em ipsum dolor sit </p>
-            </div>
-        </div>
-    </div>
-</div>
   </section>
 
-    <!-- ***** Travel Desitination end***** -->
+  <!-- ***** Welcome Area end ***** -->
 
-    <!-- ***** Itinerary & Upcoming Dates start***** -->
 
-    <!-- ***** Itinerary start***** -->
-         <section class="ilt-up">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7" style="    background: #fff;  padding: 20px 40px; border-radius: 20px;">
-                        <div class="accordion" id="accordionExample">
-                            <h2 class="acc-head">Itinerary</h2>
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Day 1 : Arrived at Airport
-                                </button>
-                              </h2>
-                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut la or em ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut la or                                 </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Day 2 : Arrived at Airport
-                                </button>
-                              </h2>
-                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus, voluptas asperiores delectus ullam, totam commodi expedita fugiat sint beatae itaque corporis dolorem, aliquam libero laudantium ea. Suscipit, beatae autem.
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Day 3 : Arrived at Airport
-                                </button>
-                              </h2>
-                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nobis ea, debitis nemo ex repellat beatae vel nisi quos accusantium ipsa odit non commodi sit molestias. Sunt odio veniam temporibus.
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- *****tab section start***** -->
-                          <div class="tab-section">
-                            <div class="wrapper">
-                                <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                                  <li><a href="#tab1" class="active">Inclusions</a></li>
-                                  <li><a href="#tab2">Exclusions</a></li>
-                                </ul>
-                                <section id="first-tab-group" class="tabgroup">
-                                  <div id="tab1">
-                                    <h2>Heading 1</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla deserunt consectetur ratione id tempore laborum laudantium facilis reprehenderit beatae dolores ipsum nesciunt alias iusto dicta eius itaque blanditiis modi velit.</p>
-                                  </div>
-                                  <div id="tab2">
-                                    <h2>Heading 2</h2>
-                                    <p>Adipisci autem obcaecati velit natus quos beatae explicabo at tempora minima voluptates deserunt eum consectetur reiciendis placeat dolorem repellat in nam asperiores impedit voluptas iure repellendus unde eveniet accusamus ex.</p>
-                                  </div>
-                                </section>
-                              </div>
-                    </div>
-                    </div>
-                    <div class="col-md-5" >
-                      <div class="sticky-sidebar">
-                      <div class="trip-tab">
-                      <ul class="nav nav-pills trip-nav mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">June</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">July</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">August</button>
-                        </li>
-                      </ul>
-                      <div class="tab-content tab-con" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                          <form action="/action_page.php">
-                           
-                            <div class="trip-price">
-                            <input type="radio" id="html" name="fav_language" value="">
-                            <label for="html">30 June - 9 July</label><br>
-                        </div>
-                        <div class="trip-price" style="background: none;  color: #b5b5b5; border: none;">
-                            <input type="radio" class="disabled" id="css" name="fav_language" value="CSS">
-                            <label for="css">30 June - 9 July</label><br>
-                        </div>
-                        <div class="trip-price">
-                            <input type="radio" id="javascript" name="fav_language" value="JavaScript" class="disabled">
-                            <label for="javascript">30 June - 9 July</label>
-                        </div>
-                          </form>
-                        </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi ad magni vitae nulla, molestiae hic omnis facilis eaque, harum qui aperiam enim praesentium consequuntur dolore. Corrupti laboriosam in assumenda perferendis.
-                        </div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero fuga doloremque quae quas eligendi incidunt quisquam atque praesentium optio alias numquam ex eaque ab, aut dolor, at assumenda nihil earum?
-                        </div>
-                        </div>
-                      </div>
-                      <div class="price" id="price" >
-                        <h4>Price</h4>
-                        <p>₹18000</p>
-                      </div>
-                      <div class="price" id="price2">
-                        <h4>Price</h4>
-                        <p>₹20000</p>
-                      </div>
-
-                      <div class="trip-form">
-                        <a href="#" class="btn">Inquiry</a>
-                        <a href="#" class="btn">Book Now</a>
-                       </div>
-                    </div>
-                </div>
+  <!-- ***** Travel Desitination***** -->
+  <section class="Desitination">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="trip-about">
+            <div class="row">
+              <div class="col-6">
+                <img src="assets/img/images/about1.png" alt="roamers-trip">
               </div>
-            </div>
-         </section>
-    <!-- ***** Itinerary end***** -->
-
-     <!-- ***** Itinerary & Upcoming Dates end***** -->
-     <!-- ***** Gallery start ***** -->
-<section class="gallery">
-  <h2 class="g-head">Spots/activity</h2>
-      <div id="slider">
-        <div id="slider-container">
-          <div class="slider-item">
-            <img src="assets/img/images/gallery-img1.webp" alt="roamers-Gallery">
-            <div class="silder-inner">
-              <h2>Pub Crawl</h2>
-              <p>Go on a pub crawl across the popular bars of Brussels</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <img src="assets/img/images/gallery-img2.webp" alt="roamers-Gallery">
-            <div class="silder-inner">
-              <h2>Pub Crawl</h2>
-              <p>Go on a pub crawl across the popular bars of Brussels</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <img src="assets/img/images/gallery-img1.webp" alt="roamers-Gallery">
-            <div class="silder-inner">
-              <h2>Pub Crawl</h2>
-              <p>Go on a pub crawl across the popular bars of Brussels</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <img src="assets/img/images/gallery-img2.webp" alt="roamers-Gallery">
-            <div class="silder-inner">
-              <h2>Pub Crawl</h2>
-              <p>Go on a pub crawl across the popular bars of Brussels</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <img src="assets/img/images/gallery-img1.webp" alt="roamers-Gallery">
-            <div class="silder-inner">
-              <h2>Pub Crawl</h2>
-              <p>Go on a pub crawl across the popular bars of Brussels</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <img src="assets/img/images/gallery-img2.webp" alt="roamers-Gallery">
-            <div class="silder-inner">
-              <h2>Pub Crawl</h2>
-              <p>Go on a pub crawl across the popular bars of Brussels</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <img src="assets/img/images/gallery-img1.webp" alt="roamers-Gallery">
-            <div class="silder-inner">
-              <h2>Pub Crawl</h2>
-              <p>Go on a pub crawl across the popular bars of Brussels</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <img src="assets/img/images/gallery-img2.webp" alt="roamers-Gallery">
-            <div class="silder-inner">
-              <h2>Pub Crawl</h2>
-              <p>Go on a pub crawl across the popular bars of Brussels</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <img src="assets/img/images/gallery-img1.webp" alt="roamers-Gallery">
-            <div class="silder-inner">
-              <h2>Pub Crawl</h2>
-              <p>Go on a pub crawl across the popular bars of Brussels</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <img src="assets/img/images/gallery-img2.webp" alt="roamers-Gallery">
-            <div class="silder-inner">
-              <h2>Pub Crawl</h2>
-              <p>Go on a pub crawl across the popular bars of Brussels</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <img src="assets/img/images/gallery-img1.webp" alt="roamers-Gallery">
-            <div class="silder-inner">
-              <h2>Pub Crawl</h2>
-              <p>Go on a pub crawl across the popular bars of Brussels</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <img src="assets/img/images/gallery-img2.webp" alt="roamers-Gallery">
-               <div class="silder-inner">
-              <h2>Pub Crawl</h2>
-              <p>Go on a pub crawl across the popular bars of Brussels</p>
-            </div>
-          </div>
-        </div>
-        <button id="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-        <button id="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
-      </div>
-</section>
-      <!--====== Gallery End ======-->
-      <!--====== faq Start ======-->
-      <section class="faq">
-        <h2 class="g-head">FAQ</h2>
-        <div class="container">
-          <div class="row">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <div class="accordion-item acc-item">
-                <h2 class="accordion-header acco-head" id="flush-headingOne">
-                  <button class="accordion-button acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  How does the booking process works?
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur debitis, repellendus repudiandae saepe quis odit odio! Ratione dignissimos quibusdam officiis, id qui rem laborum numquam consequuntur explicabo voluptatum alias architecto.                </div>
-              </div>
-              </div>
-              <div class="accordion-item acc-item">
-                <h2 class="accordion-header acco-head" id="flush-headingTwo">
-                  <button class="accordion-button collapsed acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Who can join this trip?
-                  </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quasi quaerat reiciendis eos. Pariatur aliquam, reprehenderit mollitia ratione rem odit inventore nam velit unde harum et, doloremque dignissimos placeat repudiandae!                </div>
-              </div>
-              </div>
-              <div class="accordion-item acc-item">
-                <h2 class="accordion-header  acco-head" id="flush-headingThree">
-                  <button class="accordion-button collapsed acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Which flights are suitable for this trip?
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.
-                  </div>
-                </div>
+              <div class="col-6">
+                <img src="assets/img/images/about2.png" alt="roamers-trip" style="margin-top:70px;">
               </div>
             </div>
           </div>
         </div>
-      </section>
-    <!--====== faq END ======-->
-
-        <!--====== SIMILER TRIP Start ======-->
-<section class="similer-trip">
-  <h2 class="g-head">Similar Trips</h2>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <div class="similer-content">
-          <img class="w-100" src="assets/img/images/similer-img.webp" alt="roamers-similer trip">
-          <div class="similer-inner">
-            <h2>Thai Island Hopper</h2>
-            <p>Phuket, Phi Phi, Krabi</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="similer-content">
-          <img class="w-100" src="assets/img/images/similer-img.webp" alt="roamers-similer trip">
-          <div class="similer-inner">
-            <h2>Thai Island Hopper</h2>
-            <p>Phuket, Phi Phi, Krabi</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="similer-content">
-          <img class="w-100" src="assets/img/images/similer-img.webp" alt="roamers-similer trip">
-          <div class="similer-inner">
-            <h2>Thai Island Hopper</h2>
-            <p>Phuket, Phi Phi, Krabi</p>
+        <div class="col-md-7" style="display: grid; place-items: center;">
+          <div class="travel-des">
+            <h2 class="head text-start">
+              Overview
+            </h2>
+            <h3>Over View of the Destination</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut la or em ipsum
+              dolor sit Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut la or em
+              ipsum dolor sit </p>
+            <a href="#" class="btn">Read More</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-            <!--====== SIMILER TRIP END ======-->
+  </section>
 
-   <!--====== FOOTER START======-->
-   <footer class="footer-section">
+  <!-- ***** Travel Desitination end***** -->
+
+  <!-- ***** Itinerary & Upcoming Dates start***** -->
+
+  <!-- ***** Itinerary start***** -->
+  <section class="ilt-up">
     <div class="container">
-      <div class="footer-above">
+      <div class="row">
+        <div class="col-md-7" style="padding: 20px 40px; ">
+          <div class="accordion" id="accordionExample">
+            <h2 class="acc-head"></h2>
+            <h2 class="head text-start">
+              Itinerary
+            </h2>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Day 1: Arrival in Kochi and drive to Vagamon (3.5 hours)
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul class="acc-inner">
+                    <li>
+                      Hey, wlcome to the land of coconuts! Meet our Roamers team and captains at Kochi as our exciting
+                      journey starts @11 am to the most beloved hill station; Vagamon.
+                    </li>
+                    <li>
+                      It's going to be about 3-hour Journey. During the drive, let's share stories, laughter, and get to
+                      know each other while enjoying the mesmerizing views of the Vagamon hills.
+                    </li>
+                    <li>
+                      Upon reaching Vagamon, settle in your hotel and enjoy the ambience. Let's head out to explore the
+                      local market at eve and indulge in a delightful local-style dinner.
+                    </li>
+                    <li>
+                      Get ready for an electrifying night on the hilltop! let's danceand sing under the stars, creating
+                      unforgettable memories and endless laughter.
+                    </li>
+                    <li>
+                      Rest and recharge for an exciting day ahead, as our Vagamon adventure has just begun.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Day 2: Vagamon sightseeing, Paragliding & Trekking
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul class="acc-inner">
+                    <li>
+                      Let's start our day bright and early, heading straight to the Vagamon Meadows. Explore the serene
+                      landscapes, Take leisure strolls, snap stunning photos and soak in the tranquil atmosphere.
+                    </li>
+                    <li>
+                      Alright, it's time to fly Roamers! We'll head to the paragliding activity spot. Experience the
+                      thrill of paragliding as you glide through the clouds and witness the breathtaking aerial views of
+                      Vagamon's mesmerizing landscape. Those who aren't into sport activities, no worries! just relax
+                      and enjoy the peaceful atmosphere. </li>
+                    <li>
+                      Next, let's visit the renowned Pine Forest. Take your time to wander and soak in the serene
+                      ambiance, surrounded by majestic pine trees. </li>
+                    <li>
+                      Post lunch, let's head towards Marmala Waterfalls for a trekking adventure. The trek to the
+                      waterfalls offers us the opportunity to explore the untouched beauty of the surroundings, navigate
+                      through rugged terrain, and get closer to the breathtaking Marmala Waterfall </li>
+                    <li>
+                      Wrap up the day with a delightful dinner and relax in your cozy accommodation. </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseTwo">
+                  Day 3: Vagamon to Varkala (4.5 hours)
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul class="acc-inner">
+                    <li>
+                      Post breakfast, bid farewell to the hills as we embark on our journey towards the coastal town of
+                      Varkala. </li>
+                    <li>
+                      Enroute we'll stop at the fascinating Jatayu Earth Centre. Discover the larger-than-life sculpture
+                      of Jatayu, the mythical bird from the Indian epic Ramayana, which stands as a symbol of courage
+                      and valor. Get to know the history and stories from Team Captians </li>
+                    <li>
+                      We'll take a cable car ride to the top of the center and you'll be rewarded with breathtaking
+                      panoramic views of the surrounding landscapes, don't forget to capture stunning photos here gang!
+                    </li>
+                    <li>
+                      Then, we'll check in to our hotel at varkala and Roamers, feel free to have a 'Me Time' roam to
+                      near by beach, cliffs. Explore the vibrant local markets to find unique souvenirs for your loved
+                      ones and indulge in the flavors of Varkala by visiting popular cafes and treating yourself. </li>
+                    <li>
+                      Afterwards, we'll make our way back to our cozy hotel to unwind and recharge. Get ready for an
+                      exhilarating adventure that awaits us tomorrow. </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseTwo">
+                  Day 4: Beach Day, Surfing and more adventure!
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul class="acc-inner">
+                    <li>
+                      Start the day with a surfing lesson at Kappil Beach, which is known for its consistent waves and
+                      surf-friendly conditions. If you're not into surfing, no worries! immerse in the beach vibe and
+                      rest on the nature's lap.
+                    </li>
+                    <li>
+                      Afterwards, let's head to check the famous varkala beach, Black Beach and Papanasam Beach. </li>
+                    <li>
+                      Post Lunch, We're going to the Mangroove forest to spill our adventure spirits. Indulge in
+                      kayaking , Cycling, stand up paddling or trekking to explore local rituals, cuisines and
+                      lifestyles spending the entire eve. </li>
+                    <li>
+                      After satisfying day, let's head to our hotel for a good night sleep.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseTwo">
+                  Day 5: Varkala to Alleppey (2 hours)
+                </button>
+              </h2>
+              <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul class="acc-inner">
+                    <li>
+                      Post breakast, Say goodbye to Varkala. We'll checkout from our hotel and driving to Alleppey which
+                      is touted as the 'Backwater capital of India'.
+                    </li>
+                    <li>
+                      Check into our floating paradise, the houseboat, and indulge in a delectable local lunch while
+                      cruising along the mesmerizing backwaters. Immerse yourself in the tranquility as we glide through
+                      the picturesque Vembanad Lake and Punnamada Lake.
+                    </li>
+                    <li>
+                      But the excitement doesn't stop thereyou can hop on a thrilling speed boat ride, exploring the
+                      charming villages and hidden gems that surround us. Capture the sunsets while having kerala
+                      traditional tea & Snack
+                    </li>
+                    <li>
+                      Let's give a thought about poor souls who left kerala just visiting one place and left. Finally,
+                      we'll retire for the night with a traditional Kerala-style dinner, music, and gang in the middle
+                      of the sea.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseTwo">
+                  Day 6: Alleppey Explore & Farewell Dinner
+                </button>
+              </h2>
+              <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul class="acc-inner">
+                    <li>
+                      After Breakfast on houseboat, let's checkout and begin day by visiting the Alappuzha Beach, where
+                      you can take a stroll along the shoreline and enjoy the serene coastal ambiance. </li>
+                    <li>
+                      Afternoon, we'll take a boat ride to Pathiramanal, a beautiful island in the Vembanad Lake known
+                      for its scenic beauty and bird watching opportunities. Spend time exploring the island's natural
+                      wonders and spotting various bird species.
+                    </li>
+                    <li>
+                      Enjoy a delicious seafood lunch at a local restaurant, savoring the flavors of the region's
+                      culinary delights.
+                    </li>
+                    <li>
+                      At eve, we'll head to the Punnamada Lake, find a serene spot along the shoreline, and witness a
+                      mesmerizing sunset over the backwaters, creating a picturesque view. </li>
+                    <li>
+                      We came to an end of our Journey Roamers! We will give this trip a fitting finale by hosting an
+                      all-inclusive farewell dinner to make it truly special. Let's reflect and see how the strangers
+                      has become family now.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapseTwo">
+                  !Day 7: To Kochi & Back to home!
+                </button>
+              </h2>
+              <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul class="acc-inner">
+                    <li>
+                      After breakfast, we'll depart from Alleppey and drive back to Kochi.
+                    </li>
+                    <li>
+                      Goodbyes are never easy, but what a ride it has been! In just 7 days, we shared thrills, spills,
+                      and countless good times, let's plan a reunion trip next year to continue the adventure. 100%
+                      guaranteed!
+                    </li>
+                    <li>
+                      See you guys, more Hugs!
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *****tab section start***** -->
+          <div class="tab-section">
+            <div class="wrapper">
+              <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                <li><a href="#tab1" class="active">Inclusions</a></li>
+                <li><a href="#tab2">Exclusions</a></li>
+              </ul>
+              <section id="first-tab-group" class="tabgroup">
+                <div id="tab1">
+                  <h2>Heading 1</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla deserunt consectetur ratione id
+                    tempore laborum laudantium facilis reprehenderit beatae dolores ipsum nesciunt alias iusto dicta
+                    eius itaque blanditiis modi velit.</p>
+                </div>
+                <div id="tab2">
+                  <h2>Heading 2</h2>
+                  <p>Adipisci autem obcaecati velit natus quos beatae explicabo at tempora minima voluptates deserunt
+                    eum consectetur reiciendis placeat dolorem repellat in nam asperiores impedit voluptas iure
+                    repellendus unde eveniet accusamus ex.</p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="sticky-sidebar">
+            <h2 class="head text-start  ">
+              Upcoming <span class="sub-head">Slot</span>
+            </h2>
+            <div class="trip-tab">
+              <ul class="nav nav-pills trip-nav mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">June</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">July</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">August</button>
+                </li>
+              </ul>
+              <div class="tab-content tab-con" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div class="upcoming-slot slot-closed">
+                    <h3>30 May - 09 June</h3>
+                    <h4>Slots Booked</h4>
+                  </div>
+                  <div class="upcoming-slot ">
+                    <h3>09 July - 15 July</h3>
+                    <h4>(Fast Filling)</h4>
+                  </div>
+                  <div class="upcoming-slot ">
+                    <h3>15 July- 25 July</h3>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi ad magni vitae nulla, molestiae hic
+                  omnis facilis eaque, harum qui aperiam enim praesentium consequuntur dolore. Corrupti laboriosam in
+                  assumenda perferendis.
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Lorem
+                  ipsum dolor sit, amet consectetur adipisicing elit. Libero fuga doloremque quae quas eligendi incidunt
+                  quisquam atque praesentium optio alias numquam ex eaque ab, aut dolor, at assumenda nihil earum?
+                </div>
+              </div>
+            </div>
+            <div class="price">
+              <h4>Price</h4>
+              <p>₹18000</p>
+            </div>
+
+            <div class="trip-form">
+              <a href="#" class="btn inquiry">Send Inquiry</a>
+              <a href="#" class="btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Itinerary end***** -->
+
+  <!-- ***** Itinerary & Upcoming Dates end***** -->
+
+  <!-- ***** why choose us start***** -->
+
+  <section class="why-us">
+    <div class="container position-relative">
+      <h2 class="head text-white mb-2">
+        why choose us
+      </h2>
+
+      <p class="why-para">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos reprehenderit similique recus
+      </p>
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="trip-inner">
+            <h3><i class="fa-solid fa-briefcase"></i></h3>
+            <h2>affordable price available</h2>
+            <p>
+              Lorem, ipsum dolor sit amet aepe itaque consectetur adipisicing elit. Saepe itaque, di
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="trip-inner">
+            <h3><i class="fa-solid fa-earth-americas"></i></h3>
+            <h2>wide variety of designation</h2>
+            <p>
+              Lorem, ipsum dolor sit amet aepe itaque consectetur adipisicing elit. Saepe itaque, di
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="trip-inner">
+            <h3><i class="fa-solid fa-thumbs-up"></i></h3>
+            <h2>highly quality of service</h2>
+            <p>
+              Lorem, ipsum dolor sit amet aepe itaque consectetur adipisicing elit. Saepe itaque, di
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** why choose us end***** -->
+
+
+  <!--====== CUSTOMISE YOUR TRIP Start ======-->
+
+  <section class="customise_your_trip mt-60  ">
+    <div class="container-fluid">
+      <h2 class="head">
+        Spots/ <span class="sub-head">activity</span>
+      </h2>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="slider">
+            <div class="slider-container">
+              <div class="slider-item2">
+                <div class="silder-pad">
+                  <a href="#">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
+                    </div>
+                    <div class="cust-inner">
+                      <h3>Timeless Charm
+                      </h3>
+                      <h2> Vietnam</h2>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider-item2">
+                <div class="silder-pad">
+                  <a href="#">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img1.webp" alt="roamers-Gallery">
+                    </div>
+                    <div class="cust-inner">
+                      <h3>Timeless Charm
+                      </h3>
+                      <h2> Vietnam</h2>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider-item2">
+                <div class="silder-pad">
+                  <a href="#">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img3.webp" alt="roamers-Gallery">
+                    </div>
+                    <div class="cust-inner">
+                      <h3>Timeless Charm
+                      </h3>
+                      <h2> Thailand</h2>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider-item2">
+                <div class="silder-pad">
+                  <a href="#">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
+                    </div>
+                    <div class="cust-inner">
+                      <h3>Timeless Charm
+                      </h3>
+                      <h2> Kerala</h2>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider-item2">
+                <div class="silder-pad">
+                  <a href="#">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img1.webp" alt="roamers-Gallery">
+                    </div>
+                    <div class="cust-inner">
+                      <h3>Timeless Charm
+                      </h3>
+                      <h2> Andaman </h2>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider-item2">
+                <div class="silder-pad">
+                  <a href="#">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img3.webp" alt="roamers-Gallery">
+                    </div>
+                    <div class="cust-inner">
+                      <h3>Timeless Charm
+                      </h3>
+                      <h2> Vietnam</h2>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider-item2">
+                <div class="silder-pad">
+                  <a href="#">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
+                    </div>
+                    <div class="cust-inner">
+                      <h3>Timeless Charm
+                      </h3>
+                      <h2> Vietnam</h2>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider-item2">
+                <div class="silder-pad">
+                  <a href="#">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
+                    </div>
+                    <div class="cust-inner">
+                      <h3>Timeless Charm
+                      </h3>
+                      <h2> Vietnam</h2>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider-item2">
+                <div class="silder-pad">
+                  <a href="#">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
+                    </div>
+                    <div class="cust-inner">
+                      <h3>Timeless Charm
+                      </h3>
+                      <h2> Vietnam</h2>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider-item2">
+                <div class="silder-pad">
+                  <a href="#">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
+                    </div>
+                    <div class="cust-inner">
+                      <h3>Timeless Charm
+                      </h3>
+                      <h2> Vietnam</h2>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Gallery start ***** -->
+
+  <!--====== faq Start ======-->
+  <section class="faq">
+    <h2 class="head">FAQ</h2>
+    <div class="container">
+      <div class="row">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item acc-item">
+            <h2 class="accordion-header acco-head" id="flush-headingOne">
+              <button class="accordion-button acc-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                How does the booking process works?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur debitis, repellendus repudiandae
+                saepe quis odit odio! Ratione dignissimos quibusdam officiis, id qui rem laborum numquam consequuntur
+                explicabo voluptatum alias architecto. </div>
+            </div>
+          </div>
+          <div class="accordion-item acc-item">
+            <h2 class="accordion-header acco-head" id="flush-headingTwo">
+              <button class="accordion-button collapsed acc-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Who can join this trip?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quasi quaerat reiciendis eos.
+                Pariatur aliquam, reprehenderit mollitia ratione rem odit inventore nam velit unde harum et, doloremque
+                dignissimos placeat repudiandae! </div>
+            </div>
+          </div>
+          <div class="accordion-item acc-item">
+            <h2 class="accordion-header  acco-head" id="flush-headingThree">
+              <button class="accordion-button collapsed acc-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Which flights are suitable for this trip?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                happening here in terms of content, but just filling up the space to make it look, at least at first
+                glance, a bit more representative of how this would look in a real-world application.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--====== faq END ======-->
+
+  <!--====== SIMILER TRIP Start ======-->
+  <!-- *****short break trips end ***** -->
+
+  <section class="upcoming-trips my-60">
+    <h2 class="head">
+      Similar <span class="sub-head">Trips</span> <br>
+      Popular Destination
+    </h2>
+    <div class="container-fluid">
+      <div class="slider">
+        <div class="slider-container sc1">
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/we1.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/we2.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/we3.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/we1.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/we2.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/we3.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- *****  short break trips  end***** -->
+  <!--====== SIMILER TRIP END ======-->
+
+  <!--====== FOOTER START======-->
+  <footer class="footer-section">
+    <div class="container">
+      <!-- <div class="footer-above">
         <div class="row">
           <div class="col-md-6">
             <div class="footer-above-content pe-4">
@@ -435,7 +1053,7 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quasi quaera
                 <span>
                   Need any support for <br> tour & travels ?
                 </span>
-              </div> 
+              </div>
               <div>
                 <a href="#"><i class="fa-solid fa-arrow-up-long"></i></a>
               </div>
@@ -448,23 +1066,25 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quasi quaera
                 <span>
                   Ready to Get Started <br> With Vacations!
                 </span>
-              </div> 
+              </div>
               <div>
                 <a href="#"><i class="fa-solid fa-arrow-up-long"></i></a>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="footer-content pt-5 pb-5">
         <div class="row">
-          <div class=" col-lg-3 mb-50">
+          <div class=" col-lg-5 mb-50">
             <div class="footer-widget">
               <div class="footer-logo">
-                <a href="index.html"><img src="assets/img/Logo/Roamers Logo final-01.png" class="img-fluid" alt="logo"></a>
+                <a href="index.html"><img src="assets/img/Logo/Roamers Logo final-01.png" class="img-fluid"
+                    alt="logo"></a>
               </div>
               <div class="footer-text">
-                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec
+                  tetur adipisicing
                   elit,Lorem ipsum dolor sit amet.</p>
               </div>
               <div class="footer-social-icon">
@@ -475,7 +1095,7 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quasi quaera
               </div>
             </div>
           </div>
-          <div class=" col-lg-2 col-md-6 mb-30">
+          <div class=" col-lg-3 col-md-6 mb-30">
             <div class="footer-widget">
               <div class="footer-widget-heading">
                 <h3>Useful Links</h3>
@@ -483,13 +1103,13 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quasi quaera
               <ul class="p-0">
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Community blog</a></li>
-                <li><a href="#">  Work with us</a></li>
+                <li><a href="#"> Work with us</a></li>
                 <li><a href="#">Privacy policy</a></li>
                 <li><a href="#">Contact us</a></li>
               </ul>
             </div>
           </div>
-          <div class=" col-lg-4 col-md-6 mb-50">
+          <!-- <div class=" col-lg-4 col-md-6 mb-50">
             <div class="footer-widget">
               <div class="footer-widget-heading">
                 <h3>Newsletter</h3>
@@ -509,8 +1129,8 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quasi quaera
                 <i class="fa-regular fa-circle-check"></i> I agree to all terms and policies
               </p>
             </div>
-          </div>
-          <div class=" col-lg-3 col-md-6 mb-50">
+          </div> -->
+          <div class=" col-lg-4 col-md-6 mb-50">
             <div class="footer-widget">
               <div class="footer-widget-heading">
                 <h3>Contact</h3>
@@ -560,23 +1180,26 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quasi quaera
     </div>
   </footer>
 
-   <!--====== FOOTER END======-->
+  <!--====== FOOTER END======-->
 
-    <!-- ***** All jQuery Plugins ***** -->
+  <!-- ***** All jQuery Plugins ***** -->
 
-    <!-- jQuery(necessary for all JavaScript plugins) -->
-    <script src="assets/js/jquery/jquery-3.5.1.min.js"></script>
+  <!-- jQuery(necessary for all JavaScript plugins) -->
+  <script src="assets/js/jquery/jquery-3.5.1.min.js"></script>
 
-    <!-- Bootstrap js -->
-    <script src="assets/js/bootstrap/popper.min.js"></script>
-    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+  <!-- Bootstrap js -->
+  <script src="assets/js/bootstrap/popper.min.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
 
-    <!-- Plugins js -->
-    <script src="assets/js/plugins/plugins.min.js"></script>
+  <!-- Plugins js -->
+  <script src="assets/js/plugins/plugins.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
-    <!-- Active js -->
-    <script src="assets/js/main.js"></script>
-  </body>
+  <!-- Active js -->
+  <script src="assets/js/active.js"></script>
+
+
+</body>
+
 </html>
