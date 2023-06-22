@@ -1,0 +1,109 @@
+@media (max-width: 600px) {
+  .home-behind-content {
+    font-size: 78px;
+  }
+  .nav-button {
+    display: none;
+  }
+  .behind-content-inner h2 {
+    font-size: 32px;
+  }
+  .behind-content-inner p {
+    margin-top: 12px;
+  }
+  .home-row {
+    margin-top: 110px !important;
+  }
+  .cat {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cat-cards {
+    flex: 0 0 50%;
+    width: 200px;
+    display: grid;
+    margin: auto;
+    place-items: center;
+    padding: 0px 10px;
+  }
+  .slider-item1 {
+    flex: 0 0 calc(100%) !important;
+  }
+  .testimonials {
+    padding: 2rem 0rem;
+    margin: 20px 0px !important;
+    width: 100%;
+  }
+  .sc1 {
+    width: 100%;
+  }
+  .slider-item {
+    flex: 0 0 100% !important;
+    height: 100% !important;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .silder-pad {
+    margin: 0px !important;
+    position: relative;
+    overflow: hidden;
+  }
+  .cust {
+    padding: 60px 0px 0px;
+  }
+  .cust-inner h2 {
+    font-size: 22px;
+    color: #ffffff;
+  }
+  .form {
+    padding: 20px;
+  }
+  .faq {
+    padding: 0px;
+    margin: 20px;
+  }
+  .trip-home {
+    padding: 200px 0px 50px !important;
+    margin-top: -187px;
+  }
+  .trip-inner h2 {
+    font-size: 20px;
+  }
+  .col-6 {
+    margin: 24px 0px;
+  }
+  .trip-about::before {
+    left: 22px !important;
+  }
+  .travel-des::before {
+    top: -76% !important;
+    right: 0px !important;
+  }
+  .head {
+    margin: 0 0 2rem;
+  }
+  .travel-des {
+    padding: 70px 30px 30px !important;
+  }
+  .Desitination {
+    padding: 100px 0px 0px !important;
+  }
+  .ilt-up {
+    padding: 0px 0px 50px !important;
+  }
+  .acc-inner {
+    padding: 0px !important;
+  }
+  .accordion-button {
+    font-size: 16px !important;
+  }
+  .sticky-sidebar {
+    padding: 0px 20px;
+  }
+  .trip-form a {
+    margin: 30px 0px;
+  }
+  .slider-item2 {
+    flex: 0 0 calc(100%) !important;
+  }
+}
