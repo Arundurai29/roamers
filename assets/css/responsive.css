@@ -41,7 +41,7 @@
     flex: 0 0 100% !important;
     height: 100% !important;
     padding: 0px !important;
-    margin: 0px !important;
+    margin: 14.5px !important;
   }
   .silder-pad {
     margin: 0px !important;
@@ -60,14 +60,22 @@
   }
   .faq {
     padding: 0px;
-    margin: 20px;
+    margin: 40px 20px;
   }
+
   .trip-home {
     padding: 200px 0px 50px !important;
     margin-top: -187px;
   }
   .trip-inner h2 {
-    font-size: 20px;
+    font-size: 16px;
+  }
+  .trip-inner p {
+    font-size: 14px;
+  }
+  .trip-home h1 {
+    font-size: 34px;
+    line-height: 40px;
   }
   .col-6 {
     margin: 24px 0px;
@@ -80,7 +88,8 @@
     right: 0px !important;
   }
   .head {
-    margin: 0 0 2rem;
+    margin: 0 0 1.5rem;
+    font-size: 26px;
   }
   .travel-des {
     padding: 70px 30px 30px !important;
@@ -105,5 +114,124 @@
   }
   .slider-item2 {
     flex: 0 0 calc(100%) !important;
+    /* scroll-snap-align: start; */
+    margin: 14.5px !important;
+  }
+  .silder-inner h3 {
+    font-size: 12px !important;
+  }
+  .silder-inner h2 {
+    font-size: 20px !important;
+  }
+
+  .home-icon-content h3 {
+    font-size: 18px !important;
+  }
+  .home-icon-content h4 {
+    font-size: 16px !important;
+  }
+
+  .home-icon-content img {
+    width: 45px !important;
+    height: 51px !important;
+  }
+  .silder-inner h4 {
+    font-size: 14px !important;
+  }
+  .container-fluid {
+    width: 100% !important;
+  }
+
+  .silder-inner h4 > img {
+    margin-top: 0px;
+  }
+  .slider-item,
+  .slider-item1 {
+    width: 100%;
+  }
+  /* .silder-container {
+    transition: transform 0.3s ease;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  } */
+  .above-form h2 {
+    font-size: 30px;
+    margin: 20px 0px;
+    color: #094067;
+    font-weight: 500;
+  }
+  .above-form h3 {
+    font-size: 20px;
+    color: #00b3ff;
+  }
+  .form-section a {
+    font-size: 16px !important;
+  }
+  .cust-inner h2 {
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .cust-inner h3 {
+    font-size: 14px;
+    color: #ffffff;
+  }
+  .upcoming-trips {
+    margin-top: 30px;
+  }
+  .footer-text p {
+    text-align: center;
+  }
+  .footer-logo {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .footer-social-icon {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-widget-heading h3 {
+    text-align: center;
+    border-bottom: 2px solid;
+  }
+  .slider-item .silder-inner p {
+    margin: 0;
+  }
+  .footer-widget ul li {
+    text-align: center;
+  }
+  .footer-widget {
+    padding: 0px 10px;
+    display: grid;
+    place-items: center;
+  }
+  .slider-container {
+    padding-bottom: 0px !important;
+  }
+  .prev-btn,
+  .next-btn {
+    display: none !important;
+  }
+  .tab-con {
+    padding: 20px;
+  }
+  .upcoming-slot h3 {
+    font-size: 16px;
+  }
+  .upcoming-slot h4 {
+    font-size: 14px;
+  }
+  .price h4 {
+    font-size: 16px;
+  }
+  .travel-des a {
+    width: 180px;
+    margin: auto;
+  }
+  .travel-des p {
+    text-align: justify;
+  }
+  .trip-inner1 {
+    margin: 40px 0px !important;
   }
 }
