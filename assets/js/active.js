@@ -37,7 +37,7 @@ sliders.forEach(function(slider) {
   var prevBtn = slider.querySelector(".prev-btn");
   var nextBtn = slider.querySelector(".next-btn");
 
-  var slideWidth = slider.offsetWidth / 4;
+  var slideWidth = slider.offsetWidth / 1;
   var currentSlide = 0;
   var totalSlides = sliderContainer.childElementCount;
   var touchStartX = 0;
@@ -52,13 +52,13 @@ sliders.forEach(function(slider) {
   updateButtonVisibility();
 
   function showPrevSlides() {
-    currentSlide = Math.max(currentSlide - 1, 0);
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
     sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
     updateButtonVisibility();
   }
 
   function showNextSlides() {
-    currentSlide = Math.min(currentSlide + 1, totalSlides - 4);
+    currentSlide = (currentSlide + 1) % totalSlides;
     sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
     updateButtonVisibility();
   }
