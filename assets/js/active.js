@@ -31,9 +31,8 @@ $('.tabs1 a').click(function(e){
 // *****Sidebar tab content end*****    
 
 // *****Sidebar tab radio content start*****
-
 var sliders = document.querySelectorAll(".slider");
-sliders.forEach(function (slider) {
+sliders.forEach(function(slider) {
   var sliderContainer = slider.querySelector(".slider-container");
   var prevBtn = slider.querySelector(".prev-btn");
   var nextBtn = slider.querySelector(".next-btn");
@@ -41,91 +40,48 @@ sliders.forEach(function (slider) {
   var slideWidth = slider.offsetWidth / 4;
   var currentSlide = 0;
   var totalSlides = sliderContainer.childElementCount;
+  var touchStartX = 0;
+  var touchEndX = 0;
 
   prevBtn.addEventListener("click", showPrevSlides);
   nextBtn.addEventListener("click", showNextSlides);
+  sliderContainer.addEventListener("touchstart", handleTouchStart);
+  sliderContainer.addEventListener("touchmove", handleTouchMove);
+  sliderContainer.addEventListener("touchend", handleTouchEnd);
 
   updateButtonVisibility();
 
-  var initialX = null;
-  var currentX = null;
-
-  slider.addEventListener("touchstart", swipeStart);
-  slider.addEventListener("touchmove", swipeMove);
-  slider.addEventListener("touchend", swipeEnd);
-
-  function swipeStart(event) {
-    initialX = event.touches[0].clientX;
-    currentX = initialX;
-  }
-
-  function swipeMove(event) {
-    if (initialX === null) {
-      return;
-    }
-
-    currentX = event.touches[0].clientX;
-
-    var diffX = currentX - initialX;
-    sliderContainer.style.transform = `translateX(${diffX}px)`;
-  }
-
-  function swipeEnd() {
-    if (initialX === null || currentX === null) {
-      return;
-    }
-
-    var diffX = currentX - initialX;
-
-    if (Math.abs(diffX) > 50) {
-      if (diffX > 0) {
-        // Swipe right
-        showPrevSlide();
-      } else {
-        // Swipe left
-        showNextSlide();
-      }
-    } else {
-      // Reset slider position
-      sliderContainer.style.transform = "translateX(0)";
-    }
-
-    initialX = null;
-    currentX = null;
-  }
-
-  function showPrevSlide() {
-    sliderContainer.style.transform = "translateX(0)";
-  }
-
-  function showNextSlide() {
-    sliderContainer.style.transform = "translateX(-100%)";
-  }
-
   function showPrevSlides() {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    currentSlide = Math.max(currentSlide - 1, 0);
     sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
     updateButtonVisibility();
   }
 
   function showNextSlides() {
-    currentSlide = (currentSlide + 1) % totalSlides;
+    currentSlide = Math.min(currentSlide + 1, totalSlides - 4);
     sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
     updateButtonVisibility();
   }
-  function updateSliderPosition() {
-    sliderContainer.classList.add("slider-transition");
-    var position = -currentSlide * slideWidth;
-    sliderContainer.style.transform = `translateX(${position}px)`;
 
-    // Reset transition class after the transition is complete
-    setTimeout(function () {
-      sliderContainer.classList.remove("slider-transition");
-    }, 300);
+  function handleTouchStart(e) {
+    touchStartX = e.touches[0].clientX;
   }
+
+  function handleTouchMove(e) {
+    touchEndX = e.touches[0].clientX;
+  }
+
+  function handleTouchEnd() {
+    if (touchStartX - touchEndX > 50) {
+      showNextSlides();
+    } else if (touchEndX - touchStartX > 50) {
+      showPrevSlides();
+    }
+  }
+
   function updateButtonVisibility() {
     if (currentSlide === 0) {
-      prevBtn.style.display = "block";
+      prevBtn.style.display = "none";
       nextBtn.style.display = "block";
     } else if (currentSlide >= totalSlides - 4) {
       prevBtn.style.display = "block";
@@ -136,6 +92,7 @@ sliders.forEach(function (slider) {
     }
   }
 });
+
 
 // *****Sidebar tab radio content end*****
 
@@ -199,4 +156,3 @@ function moveRight() {
 btnLeft.addEventListener("click", moveLeft);
 btnRight.addEventListener("click", moveRight);
 window.addEventListener("resize", moveSlider);
-
