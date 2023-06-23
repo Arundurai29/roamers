@@ -1,8 +1,7 @@
 /* ******************************
 :: 1.0 WEB FONTS
 ****************************** */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-/* ******************************
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&display=swap"); /* ******************************
 :: 2.0 IMPORT ALL CSS
 ****************************** */
 @import url(bootstrap.min.css);
@@ -22,7 +21,7 @@
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Heebo", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -49,7 +48,7 @@ h6 {
   font-weight: 600;
   color: #222;
   margin-bottom: 0;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 
 h1 {
@@ -82,7 +81,7 @@ h6 {
 }
 
 p {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Heebo", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
@@ -94,7 +93,7 @@ a {
   color: #444;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 
 a:hover,
@@ -123,7 +122,7 @@ ol,
 ul {
   margin: 0;
   padding: 0;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 
 ol li,
@@ -163,7 +162,6 @@ img {
   line-height: 1.2;
   font-weight: 700;
   font-size: 36px;
-  font-family: "Montserrat", sans-serif !important;
   text-transform: capitalize;
   margin: 0 0 3rem;
   color: #17233e;
@@ -403,7 +401,7 @@ img {
 }
 .upcoming-slot h3 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 26px;
   color: #094067;
   margin: 0;
@@ -464,7 +462,6 @@ img {
 .wrapper1 {
   margin: 50px auto;
   width: 100%;
-  font-family: sans-serif;
   color: #555;
   font-size: 14px;
   line-height: 24px;
@@ -737,7 +734,7 @@ transition: opacity 0.3s ease, transform 0.3s ease; */
   align-items: center;
   font-size: 16px;
   color: #5f6c7b;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 0.25px solid rgba(0, 0, 0, 0.25);
 }
 
@@ -897,7 +894,6 @@ ul {
   display: block;
   font-size: 20px;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
 }
 .footer-social-icon a {
@@ -1219,7 +1215,6 @@ input[type="checkbox"]::backdrop {
 }
 .behind-content-inner p {
   color: #ffffffe2;
-  font-family: "Lato", Sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1228,7 +1223,6 @@ input[type="checkbox"]::backdrop {
 }
 .behind-content-inner h2 {
   color: #ffffff;
-  font-family: "Lato", Sans-serif;
   font-size: 54px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1562,7 +1556,6 @@ input:focus {
 #regForm {
   background-color: #ffff;
   margin: 100px auto;
-  font-family: Raleway;
   padding: 40px;
   width: 70%;
   min-width: 300px;
@@ -1576,7 +1569,6 @@ input {
   padding: 10px;
   width: 100%;
   font-size: 17px;
-  font-family: Raleway;
   border: 1px solid #aaaaaa;
 }
 
@@ -1646,15 +1638,13 @@ tr {
   margin: 0px 20px;
 }
 th,
-td {
-  font-family: "Lato";
-}
 .tborder {
   border: 2px solid #3a3a3a;
   padding: 20px;
 }
 table {
   width: 100%;
+  font-family: "Heebo", sans-serif;
 }
 th {
   font-size: 20px;
