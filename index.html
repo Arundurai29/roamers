@@ -13,6 +13,10 @@
   <!-- Title  -->
   <title>Romers</title>
 
+  <!-- slider css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Favicon  -->
   <link rel="icon" href="assets/img/favicon.png" />
 
@@ -25,7 +29,6 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <!-- Responsive css -->
-
   <link rel="stylesheet" href="assets/css/responsive.css">
   <!-- bootstrap cdn -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -33,86 +36,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-
-  <style>
-    .trip-home {
-      background: url(assets/img/bg/ladakh-cover.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: relative;
-    }
-
-    .trip-about::before {
-      background: url(assets/img/images/dot1.png);
-      background-repeat: no-repeat;
-      position: absolute;
-      content: "";
-      bottom: -45px;
-      left: -60px;
-      height: 100px;
-      width: 100px;
-    }
-
-    .travel-des::before {
-      background: url(assets/img/images/dot2.png);
-      background-repeat: no-repeat;
-      position: absolute;
-      content: "";
-      top: 0;
-      right: -60px;
-      height: 100px;
-      width: 100px;
-    }
-
-    .travel-des {
-      padding: 30px;
-    }
-
-    .travel-des a {
-      width: 180px;
-    }
-
-    .accordion-button::after {
-      background-image: url(assets/img/images/arrow-down.svg) !important;
-    }
-
-    .accordion-button:not(.collapsed)::after {
-      background-image: url(assets/img/images/arrow-up.svg) !important;
-      transform: rotate(-360deg) !important;
-    }
-
-    .why-us {
-      background: url(assets/img/images/sea-travel.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: relative;
-      padding: 60px 0px;
-    }
-
-    .why-us::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(0, 0, 0, 0.5);
-    }
-
-    .why-para {
-      color: #fff;
-      text-align: center;
-      font-size: 16px;
-      margin-bottom: 60px;
-    }
-
-    .why-us .trip-inner>h3 {
-      margin-bottom: 30px;
-      padding: 20px 24px;
-    }
-  </style>
 </head>
 
 <body>
@@ -154,673 +77,970 @@
   <!-- ***** Header End ***** -->
   <!-- ***** Welcome Area Start ***** -->
 
-  <section class="trip-home">
-    <div class="container" style="  position: relative;">
-      <h1>Kerala-God’s Own Place</h1>
-      <div class="row">
-        <div class="col-md-4 col-4">
-          <div class="trip-inner">
-            <h3><i class="fa-solid fa-indian-rupee-sign"></i></h3>
-            <p>Starting Price</p>
-            <h2>₹9500 /-</h2>
+  <section class="home">
+    <div class="container">
+      <div class="home-behind-content">
+        ROAMERS
+        <div class="behind-content-inner">
+          <p>WELCOME TO ROAMERS</p>
+          <h2>BEST WAY TO FIND YOUR <br>
+            DREAM PLACE
+          </h2>
+        </div>
+      </div>
+      <div class="row home-row">
+        <div class="col-sm-4 col-4">
+          <div class="home-icon-content text-center">
+            <img src="assets/img/images/cover-travellers.svg" alt="home icon image">
+            <h3>50000+</h3>
+            <h4>Happy Travellers</h4>
           </div>
         </div>
-        <div class="col-md-4 col-4">
-          <div class="trip-inner">
-            <h3><i class="fa-solid fa-stopwatch"></i></h3>
-            <p>Duration</p>
-            <h2>5 Days 4 Nights</h2>
+        <div class="col-sm-4 col-4">
+          <div class="home-icon-content text-center">
+            <img src="assets/img/images/cover-star.svg" alt="home icon image">
+            <h3> 9400+</h3>
+            <h4>
+              5 Star Reviews</h4>
           </div>
         </div>
-        <div class="col-md-4 col-4 ">
-          <div class="trip-inner">
-            <h3><i class="fa-solid fa-location-dot"></i></h3>
-            <p>Pickup & Drop</p>
-            <h2>Manali</h2>
+        <div class="col-sm-4 col-4">
+          <div class="home-icon-content text-center">
+            <img src="assets/img/images/cover-destination.svg" alt="home icon image">
+            <h3>300+</h3>
+            <h4>
+              Itineraries</h4>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <!-- ***** Welcome Area end ***** -->
 
-
-  <!-- ***** Travel Desitination***** -->
-  <section class="Desitination">
+  <!-- ***** icon TRIPS Start ***** -->
+  <section id="slider" class="pt-5">
     <div class="container">
-      <div class="row">
-        <div class="col-md-5">
-          <div class="trip-about">
-            <div class="row">
-              <div class="col-6">
-                <img src="assets/img/images/about1.png" alt="roamers-trip">
-              </div>
-              <div class="col-6">
-                <img src="assets/img/images/about2.png" alt="roamers-trip" style="margin-top:70px;">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-7" style="display: grid; place-items: center;">
-          <div class="travel-des">
-            <h2 class="head text-center text-md-left ">
-              Overview
-            </h2>
-            <p>
-              Welcome to our travel site! Here you'll find all the information you need to plan your next adventure and make the most of your travel experiences. Whether you're a seasoned traveler or embarking on your first trip, we're here to provide you with valuable resources, tips, and inspiration. </p>
-            <a href="#" class="btn">Read More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ***** Travel Desitination end***** -->
-
-  <!-- ***** Itinerary & Upcoming Dates start***** -->
-
-  <!-- ***** Itinerary start***** -->
-  <section class="ilt-up">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7" style="padding: 20px 40px; ">
-          <div class="accordion" id="accordionExample">
-            <h2 class="head text-center text-md-left">
-              Itinerary
-            </h2>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  Day 1: Arrival in Kochi and drive to Vagamon  (3.5 hours)
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul class="acc-inner">
-                    <li>
-                      Hey, wlcome to the land of coconuts! Meet our Roamers team and captains at Kochi as our exciting
-                      journey starts @11 am to the most beloved hill station; Vagamon.
-                    </li>
-                    <li>
-                      It's going to be about 3-hour Journey. During the drive, let's share stories, laughter, and get to
-                      know each other while enjoying the mesmerizing views of the Vagamon hills.
-                    </li>
-                    <li>
-                      Upon reaching Vagamon, settle in your hotel and enjoy the ambience. Let's head out to explore the
-                      local market at eve and indulge in a delightful local-style dinner.
-                    </li>
-                    <li>
-                      Get ready for an electrifying night on the hilltop! let's danceand sing under the stars, creating
-                      unforgettable memories and endless laughter.
-                    </li>
-                    <li>
-                      Rest and recharge for an exciting day ahead, as our Vagamon adventure has just begun.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Day 2: Vagamon sightseeing, Paragliding & Trekking
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul class="acc-inner">
-                    <li>
-                      Let's start our day bright and early, heading straight to the Vagamon Meadows. Explore the serene
-                      landscapes, Take leisure strolls, snap stunning photos and soak in the tranquil atmosphere.
-                    </li>
-                    <li>
-                      Alright, it's time to fly Roamers! We'll head to the paragliding activity spot. Experience the
-                      thrill of paragliding as you glide through the clouds and witness the breathtaking aerial views of
-                      Vagamon's mesmerizing landscape. Those who aren't into sport activities, no worries! just relax
-                      and enjoy the peaceful atmosphere. </li>
-                    <li>
-                      Next, let's visit the renowned Pine Forest. Take your time to wander and soak in the serene
-                      ambiance, surrounded by majestic pine trees. </li>
-                    <li>
-                      Post lunch, let's head towards Marmala Waterfalls for a trekking adventure. The trek to the
-                      waterfalls offers us the opportunity to explore the untouched beauty of the surroundings, navigate
-                      through rugged terrain, and get closer to the breathtaking Marmala Waterfall </li>
-                    <li>
-                      Wrap up the day with a delightful dinner and relax in your cozy accommodation. </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseTwo">
-                  Day 3: Vagamon to Varkala <br> (4.5 hours)
-                </button>
-              </h2>
-              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul class="acc-inner">
-                    <li>
-                      Post breakfast, bid farewell to the hills as we embark on our journey towards the coastal town of
-                      Varkala. </li>
-                    <li>
-                      Enroute we'll stop at the fascinating Jatayu Earth Centre. Discover the larger-than-life sculpture
-                      of Jatayu, the mythical bird from the Indian epic Ramayana, which stands as a symbol of courage
-                      and valor. Get to know the history and stories from Team Captians </li>
-                    <li>
-                      We'll take a cable car ride to the top of the center and you'll be rewarded with breathtaking
-                      panoramic views of the surrounding landscapes, don't forget to capture stunning photos here gang!
-                    </li>
-                    <li>
-                      Then, we'll check in to our hotel at varkala and Roamers, feel free to have a 'Me Time' roam to
-                      near by beach, cliffs. Explore the vibrant local markets to find unique souvenirs for your loved
-                      ones and indulge in the flavors of Varkala by visiting popular cafes and treating yourself. </li>
-                    <li>
-                      Afterwards, we'll make our way back to our cozy hotel to unwind and recharge. Get ready for an
-                      exhilarating adventure that awaits us tomorrow. </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseTwo">
-                  Day 4: Beach Day, Surfing and more adventure!
-                </button>
-              </h2>
-              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul class="acc-inner">
-                    <li>
-                      Start the day with a surfing lesson at Kappil Beach, which is known for its consistent waves and
-                      surf-friendly conditions. If you're not into surfing, no worries! immerse in the beach vibe and
-                      rest on the nature's lap.
-                    </li>
-                    <li>
-                      Afterwards, let's head to check the famous varkala beach, Black Beach and Papanasam Beach. </li>
-                    <li>
-                      Post Lunch, We're going to the Mangroove forest to spill our adventure spirits. Indulge in
-                      kayaking , Cycling, stand up paddling or trekking to explore local rituals, cuisines and
-                      lifestyles spending the entire eve. </li>
-                    <li>
-                      After satisfying day, let's head to our hotel for a good night sleep.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseTwo">
-                  Day 5: Varkala to Alleppey <br> (2 hours)
-                </button>
-              </h2>
-              <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul class="acc-inner">
-                    <li>
-                      Post breakast, Say goodbye to Varkala. We'll checkout from our hotel and driving to Alleppey which
-                      is touted as the 'Backwater capital of India'.
-                    </li>
-                    <li>
-                      Check into our floating paradise, the houseboat, and indulge in a delectable local lunch while
-                      cruising along the mesmerizing backwaters. Immerse yourself in the tranquility as we glide through
-                      the picturesque Vembanad Lake and Punnamada Lake.
-                    </li>
-                    <li>
-                      But the excitement doesn't stop thereyou can hop on a thrilling speed boat ride, exploring the
-                      charming villages and hidden gems that surround us. Capture the sunsets while having kerala
-                      traditional tea & Snack
-                    </li>
-                    <li>
-                      Let's give a thought about poor souls who left kerala just visiting one place and left. Finally,
-                      we'll retire for the night with a traditional Kerala-style dinner, music, and gang in the middle
-                      of the sea.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseTwo">
-                  Day 6: Alleppey Explore & Farewell Dinner
-                </button>
-              </h2>
-              <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul class="acc-inner">
-                    <li>
-                      After Breakfast on houseboat, let's checkout and begin day by visiting the Alappuzha Beach, where
-                      you can take a stroll along the shoreline and enjoy the serene coastal ambiance. </li>
-                    <li>
-                      Afternoon, we'll take a boat ride to Pathiramanal, a beautiful island in the Vembanad Lake known
-                      for its scenic beauty and bird watching opportunities. Spend time exploring the island's natural
-                      wonders and spotting various bird species.
-                    </li>
-                    <li>
-                      Enjoy a delicious seafood lunch at a local restaurant, savoring the flavors of the region's
-                      culinary delights.
-                    </li>
-                    <li>
-                      At eve, we'll head to the Punnamada Lake, find a serene spot along the shoreline, and witness a
-                      mesmerizing sunset over the backwaters, creating a picturesque view. </li>
-                    <li>
-                      We came to an end of our Journey Roamers! We will give this trip a fitting finale by hosting an
-                      all-inclusive farewell dinner to make it truly special. Let's reflect and see how the strangers
-                      has become family now.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapseTwo">
-                  !Day 7: To Kochi & Back to home!
-                </button>
-              </h2>
-              <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul class="acc-inner">
-                    <li>
-                      After breakfast, we'll depart from Alleppey and drive back to Kochi.
-                    </li>
-                    <li>
-                      Goodbyes are never easy, but what a ride it has been! In just 7 days, we shared thrills, spills,
-                      and countless good times, let's plan a reunion trip next year to continue the adventure. 100%
-                      guaranteed!
-                    </li>
-                    <li>
-                      See you guys, more Hugs!
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- *****tab section start***** -->
-          <div class="tab-section">
-            <div class="wrapper">
-              <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                <li><a href="#tab1" class="active">Inclusions</a></li>
-                <li><a href="#tab2">Exclusions</a></li>
-              </ul>
-              <section id="first-tab-group" class="tabgroup">
-                <div id="tab1">
-                  <h2>Heading 1</h2>
-                  <p>Our travel site offers comprehensive destination guides that provide detailed information about various destinations. From popular attractions to local customs, our guides cover all aspects of your chosen location, helping you make informed decisions and plan your itinerary effectively.
-                  </p>
-                </div>
-                <div id="tab2">
-                  <h2>Heading 2</h2>
-                  <p>While our travel site offers a wide range of valuable resources and support, it's important to note the exclusions. The actual booking and payment processes for flights, accommodations, and other travel services generally take place on third-party websites or directly with the service providers themselves.
-                   <br>
-                    Travel insurance is not provided directly through our site. While we emphasize the importance of travel insurance, it is typically obtained separately through insurance providers to ensure you have appropriate coverage for unforeseen circumstances.</p>
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="sticky-sidebar">
-            <h2 class="head text-center text-md-left ">
-              Upcoming <span class="sub-head">Slot</span>
-            </h2>
-            <div class="trip-tab">
-              <ul class="nav nav-pills trip-nav mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">June</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">July</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">August</button>
-                </li>
-              </ul>
-              <div class="tab-content tab-con" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <div class="upcoming-slot slot-closed">
-                    <h3>30 May - 09 June</h3>
-                    <h4>Slots Booked</h4>
-                  </div>
-                  <div class="upcoming-slot ">
-                    <h3>09 July - 15 July</h3>
-                    <h4>(Fast Filling)</h4>
-                  </div>
-                  <div class="upcoming-slot ">
-                    <h3>15 July- 25 July</h3>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                  <div class="upcoming-slot ">
-                    <h3>30 May - 09 Aus</h3>
-                    <h4></h4>
-                  </div>
-                  <div class="upcoming-slot ">
-                    <h3>09 July - 15 Aus</h3>
-                    <h4>(Fast Filling)</h4>
-                  </div>
-                  <div class="upcoming-slot ">
-                    <h3>15 July- 25 Aus</h3>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Lorem
-                  <div class="upcoming-slot ">
-                    <h3>30 May - 09 Sep</h3>
-                    <h4></h4>
-                  </div>
-                  <div class="upcoming-slot ">
-                    <h3>09 July - 15 Sep</h3>
-                    <h4></h4>
-                  </div>
-                  <div class="upcoming-slot ">
-                    <h3>15 July- 25 Sep</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="price">
-              <h4>Price</h4>
-              <p>₹18000</p>
-            </div>
-
-            <div class="trip-form">
-              <a href="#" class="btn inquiry">Send Inquiry</a>
-              <a href="#" class="btn">Book Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ***** Itinerary end***** -->
-
-  <!-- ***** Itinerary & Upcoming Dates end***** -->
-
-  <!-- ***** why choose us start***** -->
-
-  <section class="why-us">
-    <div class="container position-relative">
-      <h2 class="head text-white mb-2">
-        why choose us
-      </h2>
-
-      <p class="why-para">
-        Choose us for your travel needs because we offer extensive knowledge, a user-friendly experience, trustworthy recommendations, and exclusive deals and discounts. 
-      </p>
-      <div class="row">
-        <div class="col-md-4 col-sm-6">
-          <div class="trip-inner">
-            <h3><i class="fa-solid fa-briefcase"></i></h3>
-            <h2>affordable price available</h2>
-            <p>
-              At our travel site, we prioritize affordability, ensuring that you have access to a wide range of travel options at competitive prices.            </p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="trip-inner trip-inner1">
-            <h3><i class="fa-solid fa-earth-americas"></i></h3>
-            <h2>wide variety of designation</h2>
-            <p>
-              Embark on your next adventure with our travel site, offering a wide variety of destinations to suit every traveler's taste. From tropical paradises to bustling cities, explore breathtaking landscapes and immerse yourself in diverse cultures around the world.            </p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="trip-inner">
-            <h3><i class="fa-solid fa-thumbs-up"></i></h3>
-            <h2>highly quality of service</h2>
-            <p>
-              Experience the highest quality of service with our travel site. From personalized assistance to reliable support, we are committed to delivering excellence at every step of your journey.            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ***** why choose us end***** -->
-
-
-  <!--====== CUSTOMISE YOUR TRIP Start ======-->
-
-  <section class="customise_your_trip mt-60  ">
-    <div class="container-fluid">
       <h2 class="head">
-        Spots/ <span class="sub-head">activity</span>
+        Trip <span class="sub-head">Categories</span>
       </h2>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="slider">
-            <div class="slider-container">
-              <div class="slider-item2">
-                <div class="silder-pad">
-                  <a href="#">
-                    <div class="slid-img">
-                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
-                    </div>
-                    <div class="cust-inner">
-                      <h3>Timeless Charm
-                      </h3>
-                      <h2> Vietnam</h2>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="slider-item2">
-                <div class="silder-pad">
-                  <a href="#">
-                    <div class="slid-img">
-                      <img class="cus-img" src="assets/img/images/similer-img1.webp" alt="roamers-Gallery">
-                    </div>
-                    <div class="cust-inner">
-                      <h3>Timeless Charm
-                      </h3>
-                      <h2> Vietnam</h2>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="slider-item2">
-                <div class="silder-pad">
-                  <a href="#">
-                    <div class="slid-img">
-                      <img class="cus-img" src="assets/img/images/similer-img3.webp" alt="roamers-Gallery">
-                    </div>
-                    <div class="cust-inner">
-                      <h3>Timeless Charm
-                      </h3>
-                      <h2> Thailand</h2>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="slider-item2">
-                <div class="silder-pad">
-                  <a href="#">
-                    <div class="slid-img">
-                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
-                    </div>
-                    <div class="cust-inner">
-                      <h3>Timeless Charm
-                      </h3>
-                      <h2> Kerala</h2>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="slider-item2">
-                <div class="silder-pad">
-                  <a href="#">
-                    <div class="slid-img">
-                      <img class="cus-img" src="assets/img/images/similer-img1.webp" alt="roamers-Gallery">
-                    </div>
-                    <div class="cust-inner">
-                      <h3>Timeless Charm
-                      </h3>
-                      <h2> Andaman </h2>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="slider-item2">
-                <div class="silder-pad">
-                  <a href="#">
-                    <div class="slid-img">
-                      <img class="cus-img" src="assets/img/images/similer-img3.webp" alt="roamers-Gallery">
-                    </div>
-                    <div class="cust-inner">
-                      <h3>Timeless Charm
-                      </h3>
-                      <h2> Vietnam</h2>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="slider-item2">
-                <div class="silder-pad">
-                  <a href="#">
-                    <div class="slid-img">
-                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
-                    </div>
-                    <div class="cust-inner">
-                      <h3>Timeless Charm
-                      </h3>
-                      <h2> Vietnam</h2>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="slider-item2">
-                <div class="silder-pad">
-                  <a href="#">
-                    <div class="slid-img">
-                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
-                    </div>
-                    <div class="cust-inner">
-                      <h3>Timeless Charm
-                      </h3>
-                      <h2> Vietnam</h2>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="slider-item2">
-                <div class="silder-pad">
-                  <a href="#">
-                    <div class="slid-img">
-                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
-                    </div>
-                    <div class="cust-inner">
-                      <h3>Timeless Charm
-                      </h3>
-                      <h2> Vietnam</h2>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="slider-item2">
-                <div class="silder-pad">
-                  <a href="#">
-                    <div class="slid-img">
-                      <img class="cus-img" src="assets/img/images/similer-img.webp" alt="roamers-Gallery">
-                    </div>
-                    <div class="cust-inner">
-                      <h3>Timeless Charm
-                      </h3>
-                      <h2> Vietnam</h2>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-            <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="cat">
+        <div class="cat-cards">
+          <div class="cat-inner">
+            <img src="assets/img/icon/cat-icon1.svg" alt="">
+            <p>Trekking</p>
+          </div>
+        </div>
+        <div class="cat-cards">
+          <div class="cat-inner">
+            <img src="assets/img/icon/cat-icon2.svg" alt="">
+            <p>Camping</p>
+          </div>
+        </div>
+        <div class="cat-cards">
+          <div class="cat-inner">
+            <img src="assets/img/icon/cat-icon3.svg" alt="">
+            <p>Group</p>
+          </div>
+        </div>
+        <div class="cat-cards">
+          <div class="cat-inner">
+            <img src="assets/img/icon/cat-icon4.svg" alt="">
+            <p>Backpacking</p>
+          </div>
+        </div>
+        <div class="cat-cards">
+          <div class="cat-inner">
+            <img src="assets/img/icon/cat-icon5.svg" alt="">
+            <p>Weekend</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- ***** HOT TRIPS end ***** -->
 
-  <!-- ***** Gallery start ***** -->
+  <style>
+    .slider {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+     
+    }
 
-  <!--====== faq Start ======-->
-  <section class="faq">
-    <h2 class="head">FAQ</h2>
-    <div class="container">
+    .home {
+      padding: 180px 0px 220px 0px;
+      background: url(assets/img/images/water-bungalows.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      margin-top: -127px;
+    }
+
+    .slider-container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.4s ease;
+      padding-bottom: 80px;
+    }
+
+    .slider-item {
+      flex: 0 0 calc(100% / 3);
+      height: 100%;
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      padding: 20px 20px;
+      margin: 10px 20px;
+    }
+
+    .slider-item .silder-inner p {
+      border: none !important;
+    }
+
+    .slider-item2 {
+      flex: 0 0 calc(100% / 4);
+      height: 100%;
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      margin: none;
+      padding: none;
+      box-shadow: none;
+
+    }
+
+    .cust-inner {
+      position: absolute;
+      bottom: 0;
+      padding: 20px;
+      left: 0;
+      /* transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease; */
+    }
+
+    .silder-pad {
+      margin: 20px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* .silder-pad :hover .cust-inner{
+  opacity: 1;
+  transform: translateY(0%);
+} */
+    .slider-item2 img {
+      height: 350px;
+      transition: 0.3s ease-in-out;
+
+    }
+
+    .slid-img::after {
+      background-color: rgba(12, 12, 12, 0.4);
+      color: #fff;
+      position: absolute;
+      inset: 0;
+      content: "";
+
+    }
+
+    .slid-img {
+      transition: 0.3s ease-in-out;
+    }
+
+    .slid-img:hover {
+      transform: scale(1.3);
+    }
+
+    .cust-inner h3 {
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+    .cust-inner h2 {
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    .slider-item1 {
+      flex: 0 0 calc(100% / 4);
+      height: 100%;
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      margin: 10px 15px;
+    }
+
+    .slider-item img {
+      width: 100%;
+      border-radius: 0px;
+    }
+
+    .prev-btn,
+    .next-btn {
+      position: absolute;
+      bottom: -18px;
+      z-index: 11;
+      transform: translateY(-48%);
+      padding: 6px 18px;
+      color: #fff;
+      border: none;
+      outline: none;
+      text-align: center;
+      border-radius: 63px;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    .prev-btn,
+    .next-btn :hover {
+      font-size: 28px;
+    }
+
+    .prev-btn {
+      right: 117px;
+      background: #ffff;
+      color: #0b0b0b;
+    }
+
+    .next-btn:hover {
+      background: #ffff;
+      color: #0b0b0b;
+    }
+
+    .prev-btn:hover {
+      background: #094067;
+      color: #ffff !important;
+    }
+
+    .next-btn {
+      right: 50px;
+      background: #094067;
+    }
+
+    .gallery {
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    .silder-inner {
+      padding: 20px;
+      background: #ffff;
+
+    }
+
+    .silder-inner h2 {
+      font-size: 24px;
+      margin-bottom: 0.7rem;
+      color: #094067;
+    }
+
+    .silder-inner p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .g-head {
+      margin: 60px 0px;
+      text-align: center;
+    }
+
+    .acc-btn {
+      padding: 1.5rem 1.5rem !important;
+    }
+
+    .acc-btn:not(.collapsed) {
+      background: #00b3ff !important;
+      box-shadow: none !important;
+      border-radius: 8px !important;
+      color: #ffffff !important;
+    }
+
+    .acco-head {
+      padding: 0 !important;
+    }
+
+    .acc-item {
+      margin-bottom: 25px !important;
+    }
+
+    .acc-btn::after {
+      background-image: url(/assets/img/images/arroww\ Black.svg) !important;
+    }
+
+    .acc-btn:not(.collapsed)::after {
+      background-image: url(/assets/img/images/arroww\ white.svg) !important;
+      transform: rotate(-360deg) !important;
+    }
+
+    .faq {
+      padding: 0px 200px;
+      margin: 60px;
+    }
+
+    .similer-trip {
+      margin: 60px;
+    }
+
+    .similer-inner {
+      margin: 20px 5px;
+    }
+
+    .similer-inner h2 {
+      font-size: 32px;
+    }
+
+    .similer-inner p {
+      font-size: 16px;
+      margin: 15px 0px;
+    }
+
+    .similer-content img {
+      border-radius: 0px;
+    }
+
+    .similer-content {
+      padding: 20px;
+    }
+
+    .silder-inner h3 {
+      font-size: 15px;
+      color: #00B3FF;
+      font-weight: 400;
+    }
+
+    .silder-inner p {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: #5F6C7B;
+      padding-bottom: 20px;
+      border-bottom: 0.25px solid rgba(0, 0, 0, 0.25);
+    }
+
+    .silder-inner p>img {
+      width: 20px !important;
+      height: 20px;
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .silder-inner h4 {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: #094067;
+      font-weight: 400;
+    }
+
+    .silder-inner h4>img {
+      width: 20px !important;
+      height: 20px;
+      display: inline-block;
+      margin-right: 5px;
+      margin-top: -7px;
+    }
+
+    .silder-inner span {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      color: #00b3ff;
+      margin-left: 5px;
+      font-weight: 600;
+    }
+
+    .inner {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 0;
+      margin-bottom: 0.7rem;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .container-fluid {
+      width: 95%;
+      padding-right: var(--bs-gutter-x, .75rem);
+      padding-left: var(--bs-gutter-x, .75rem);
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .sc1 {
+      width: 92%;
+    }
+
+    .sta {
+      font-size: 18px !important;
+      font-weight: 400 !important;
+    }
+  </style>
+  <!-- *****  Backpacking Trips  start***** -->
+
+  <section class="upcoming-trips my-60">
+    <h2 class="head">
+      Upcoming <span class="sub-head">Trips</span> Packages
+    </h2>
+    <div class="container-fluid">
+      <div class="slider">
+        <div class="slider-container sc1">
+          <div class="slider-item1">
+            <a href="#">
+              <img src="assets/img/images/up-com1.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner pt-15">
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
+                  <h4 class="sta">Starts at </h4>
+                </div>
+                <div class="inner pt-10">
+                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                  <h4> <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item1">
+            <a href="#">
+              <img src="assets/img/images/up-com2.png" alt=" roamers-Gallery">
+              <div class="silder-inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner pt-15">
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
+                  <h4 class="sta">Starts at </h4>
+                </div>
+                <div class="inner pt-10">
+                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                  <h4> <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item1">
+            <a href="#">
+              <img src="assets/img/images/up-com3.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner pt-15">
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
+                  <h4 class="sta">Starts at </h4>
+                </div>
+                <div class="inner pt-10">
+                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                  <h4> <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item1">
+            <a href="#">
+              <img src="assets/img/images/up-com4.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner pt-15">
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
+                  <h4 class="sta">Starts at </h4>
+                </div>
+                <div class="inner pt-10">
+                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                  <h4> <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item1">
+            <a href="#">
+              <img src="assets/img/images/up-com1.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner pt-15">
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
+                  <h4 class="sta">Starts at </h4>
+                </div>
+                <div class="inner pt-10">
+                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                  <h4> <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item1">
+            <a href="#">
+              <img src="assets/img/images/up-com2.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner pt-15">
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
+                  <h4 class="sta">Starts at </h4>
+                </div>
+                <div class="inner pt-10">
+                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                  <h4> <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item1">
+            <a href="#">
+              <img src="assets/img/images/up-com3.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner pt-15">
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
+                  <h4 class="sta">Starts at </h4>
+                </div>
+                <div class="inner pt-10">
+                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                  <h4> <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item1">
+            <a href="#">
+              <img src="assets/img/images/up-com4.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner pt-15">
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
+                  <h4 class="sta">Starts at </h4>
+                </div>
+                <div class="inner pt-10">
+                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                  <h4> <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item1">
+            <a href="#">
+              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner pt-15">
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
+                  <h4 class="sta">Starts at </h4>
+                </div>
+                <div class="inner pt-10">
+                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                  <h4> <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item1">
+            <a href="#">
+              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner pt-15">
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
+                  <h4 class="sta">Starts at </h4>
+                </div>
+                <div class="inner pt-10">
+                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                  <h4> <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item1">
+            <a href="#">
+              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner pt-15">
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
+                  <h4 class="sta">Starts at </h4>
+                </div>
+                <div class="inner pt-10">
+                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                  <h4> <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- *****  Backpacking Trips  end***** -->
+
+  <!-- ***** instagram start***** -->
+  <section class="travelgram">
+    <div class="container-fluid">
       <div class="row">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item acc-item">
-            <h2 class="accordion-header acco-head" id="flush-headingOne">
-              <button class="accordion-button acc-btn collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                How does the booking process works?
-              </button>
+        <div class="col-md-6">
+          <!-- <div class="testimonials-above">
+            <h2>
+              Rated by Explorers
             </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-              data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                Booking flights and accommodations through our travel site is simple. Once you've selected your desired destination and travel dates, our platform will provide you with options from various airlines and hotels. You can compare prices, flight times, and hotel amenities before making your selection. Once you've made your decision, simply follow the prompts to complete your booking securely. </div>
-            </div>
-          </div>
-          <div class="accordion-item acc-item">
-            <h2 class="accordion-header acco-head" id="flush-headingTwo">
-              <button class="accordion-button collapsed acc-btn" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                What if I need to make changes or cancel my travel plans?
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-              data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                We understand that travel plans may need to change. If you need to modify or cancel your travel arrangements, we recommend reviewing the specific terms and conditions provided by the airline, hotel, or travel service you booked with. While we strive to provide flexibility, individual providers may have their own policies regarding changes or cancellations. It's best to contact them directly for assistance and guidance.</div>
-            </div>
-          </div>
-          <div class="accordion-item acc-item">
-            <h2 class="accordion-header  acco-head" id="flush-headingThree">
-              <button class="accordion-button collapsed acc-btn" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                Is travel insurance included in my booking?
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-              data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                Travel insurance is not automatically included in your booking through our travel site. However, we strongly recommend considering travel insurance to protect yourself against unforeseen circumstances such as trip cancellations, medical emergencies, or lost luggage. You can explore various travel insurance options from reputable providers and choose the coverage that best suits your needs.
+            <p>
+              Incredible people, unforgettable experiences, 'pinch yourself moments' - every Metanoia expedition is
+              different. But don't just take our word for it...
+            </p>
+          </div> -->
+          <h2 class="head ">
+            Testimonials</span>
+          </h2>
+          <div class="testimonial">
+            <div class="testimonials">
+
+
+              <div class="slider-containe">
+                <div class="sliders">
+                  <div class="slide-box">
+                    <!-- Testi One -->
+                    <p class="comment">
+                      "Booking my trips through this travel site has been a breeze. The process is simple, and the prices are unbeatable. Highly recommended!" 
+                    </p>
+                    <img
+                      src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" />
+                    <h3 class="name">Prasana</h3>
+                    <h4 class="job">Co-Founder Of Techicnutpam Company</h4>
+                    <ul class="star">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="slide-box">
+                    <!-- Testi Two -->
+                    <p class="comment">
+                      I love how this travel site provides honest reviews and recommendations. It has helped me make informed decisions and discover hidden gems during my travels.
+                    </p>
+                    <img
+                      src="https://images.unsplash.com/photo-1627541718143-1adc1b582e62?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bXVzbGltfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+                    <h3 class="name">Arun Kumar</h3>
+                    <h4 class="job">Full stack Developer, Speaker</h4>
+                    <ul class="star">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="slide-box">
+                    <!-- Testi Three -->
+                    <p class="comment">
+                      Using this travel site has made my travel planning stress-free. The user-friendly interface and excellent customer support have exceeded my expectations. A fantastic resource for any traveler
+                    </p>
+                    <img
+                      src="https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGZhY2V8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+                    <h3 class="name">Chan</h3>
+                    <h4 class="job">UX/UI Designer, Phtographer</h4>
+                    <ul class="star">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <a href="#!" class="control-slider btn-left">
+                  <i class="fas fa-chevron-left"></i>
+                </a>
+                <a href="#!" class="control-slider btn-right">
+                  <i class="fas fa-chevron-right"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
+        <div class="col-md-6 inst-w">
+          <section class="upcoming-trips ">
+            <h2 class="head">
+              Travelgram
+              <a href="#">@roamerstravel</a>
+            </h2>
+            <div class="elfsight-app-e8d98cf2-cea9-4ec5-a862-e757b696c663"></div>
+        </div>
       </div>
     </div>
   </section>
-  <!--====== faq END ======-->
 
-  <!--====== SIMILER TRIP Start ======-->
+
+  <!-- ***** instagram end***** -->
+
   <!-- *****short break trips end ***** -->
 
   <section class="upcoming-trips my-60">
     <h2 class="head">
-      Similar <span class="sub-head">Trips</span> <br>
-      Popular Destination
+      Backpacking <span class="sub-head">Trips</span>
+    </h2>
+    <div class="container-fluid">
+      <div class="slider">
+        <div class="slider-container sc1">
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/bp1.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon"> Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/bp2.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/bp3.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/bp1.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/bp2.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/bp3.png" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
+              <div class="silder-inner">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
+                    Madrid</h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- *****  short break trips  end***** -->
+
+  <!-- *****short break trips end ***** -->
+
+  <section class="upcoming-trips my-60">
+    <h2 class="head">
+      Weekend <span class="sub-head">Trips</span>
     </h2>
     <div class="container-fluid">
       <div class="slider">
@@ -1042,150 +1262,216 @@
   </section>
 
   <!-- *****  short break trips  end***** -->
-  <!--====== SIMILER TRIP END ======-->
 
-<!--====== FOOTER START======-->
-<footer class="footer-section">
-  <div class="container">
-    <!-- <div class="footer-above">
+
+  <!-- ***** quotes start ***** -->
+  <section class="quotes mt-60">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-6">
-          <div class="footer-above-content pe-4">
-            <div>
-              <img src="assets/img/images/icon-headphone.png" alt="Romer-footer images">
-              <span>
-                Need any support for <br> tour & travels ?
-              </span>
+          <div class="cust">
+            <div class="row">
+              <div class="col-6">
+                <div class="silder-pad">
+                  <a href="#">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/cust1.png" alt="roamers-Gallery">
+                    </div>
+                    <div class="cust-inner">
+                      <h3>Timeless Charm
+                      </h3>
+                      <h2> Vietnam</h2>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="silder-pad">
+                  <a href="#">
+                    <div class="slid-img">
+                      <img class="cus-img" src="assets/img/images/cust2.png" alt="roamers-Gallery">
+                    </div>
+                    <div class="cust-inner">
+                      <h3>Timeless Charm
+                      </h3>
+                      <h2> Vietnam</h2>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div>
-              <a href="#"><i class="fa-solid fa-arrow-up-long"></i></a>
-            </div>
+            <a href="#" class="btn" style="margin: 27px 20px;">Customize Your Trips</a>
           </div>
         </div>
-        <div class="col-md-6 ps-4">
-          <div class="footer-above-content">
-            <div>
-              <img src="assets/img/images/icon-travel.png" alt="Romer-footer images">
-              <span>
-                Ready to Get Started <br> With Vacations!
-              </span>
+        <div class="col-md-6">
+          <div class="form">
+            <div class="above-form">
+              <h3>Have A Query?</h3>
+              <h2>Talk To Our Travel Experts</h2>
             </div>
-            <div>
-              <a href="#"><i class="fa-solid fa-arrow-up-long"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <div class="footer-content pt-5 pb-5">
-      <div class="row">
-        <div class=" col-lg-5 my-40">
-          <div class="footer-widget">
-            <div class="footer-logo">
-              <a href="index.html"><img src="assets/img/Logo/Roamers Logo final-01.png" class="img-fluid"
-                  alt="logo"></a>
-            </div>
-            <div class="footer-text">
-              <p>
-                                  Thank you for choosing our travel site. We are dedicated to providing you with exceptional service and unforgettable travel experiences. Whether you're planning your dream vacation or seeking inspiration for your next adventure, our site is here to assist you every step of the way.
-              </p>
-            </div>
-            <div class="footer-social-icon">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class=" col-lg-3 col-md-6 my-40">
-          <div class="footer-widget">
-            <div class="footer-widget-heading">
-              <h3>Useful Links</h3>
-            </div>
-            <ul class="p-0">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Community blog</a></li>
-              <li><a href="#"> Work with us</a></li>
-              <li><a href="#">Privacy policy</a></li>
-              <li><a href="#">Contact us</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- <div class=" col-lg-4 col-md-6 mb-50">
-          <div class="footer-widget">
-            <div class="footer-widget-heading">
-              <h3>Newsletter</h3>
-            </div>
-            <div class="footer-text mb-25">
-              <p>
-                Subscribe our newsletter to get our latest update & news.
-              </p>
-            </div>
-            <div class="subscribe-form">
-              <form action="#">
-                <input type="text" placeholder="Email Address">
-                <button><i class="fab fa-telegram-plane"></i></button>
+            <div class="form-section">
+              <form action="">
+                <input type="text" placeholder="Name" name="name" id="">
+                <input type="email" placeholder="Email-ID" name="name" id="">
+                <input type="text" placeholder="Mobile Number" name="name" id="">
+                <a href="#" class="btn"><i class="fa-regular fa-comment-dots"></i> REQUEST CALL BACK</a>
               </form>
             </div>
-            <p class="newslet">
-              <i class="fa-regular fa-circle-check"></i> I agree to all terms and policies
-            </p>
-          </div>
-        </div> -->
-        <div class=" col-lg-4 col-md-6 my-40">
-          <div class="footer-widget">
-            <div class="footer-widget-heading">
-              <h3>Contact</h3>
-            </div>
-            <div class="fci-container">
-            <div class="footer-contact-item">
-              <span><i class="fa-solid fa-phone"></i></span>
-              <div class="fc-inner">
-                <p>
-                  Drop a Line
-                </p>
-                <h3>+91 0000000000</h3>
-              </div>
-            </div>
-            <div class="footer-contact-item">
-              <span><i class="fa-solid fa-envelope"></i></span>
-              <div class="fc-inner">
-                <p>
-                  Email Address
-                </p>
-                <h3>roamers@gmail.com</h3>
-              </div>
-            </div>
-            <div class="footer-contact-item">
-              <span ><i class="fa-solid fa-location-dot"></i></span>
-              <div class="fc-inner">
-                <p>
-                  Visit office
-                </p>
-                <h3>583 Main Street, NY, USA</h3>
-              </div>
-            </div>
-          </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="copyright-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center text-lg-left">
-          <div class="copyright-text">
-            <p>Copyright &copy; 2023, All Right Reserved <a href="https://codepen.io/anupkumar92/">Romers</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
 
-<!--====== FOOTER END======-->
+      </div>
+    </div>
+  </section>
+  <!--====== quotes End ======-->
+
+
+  <!--====== SIMILER TRIP Start ======-->
+
+  <!--====== SIMILER TRIP END ======-->
+
+  <!--====== FOOTER START======-->
+  <footer class="footer-section">
+    <div class="container">
+      <!-- <div class="footer-above">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="footer-above-content pe-4">
+              <div>
+                <img src="assets/img/images/icon-headphone.png" alt="Romer-footer images">
+                <span>
+                  Need any support for <br> tour & travels ?
+                </span>
+              </div>
+              <div>
+                <a href="#"><i class="fa-solid fa-arrow-up-long"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ps-4">
+            <div class="footer-above-content">
+              <div>
+                <img src="assets/img/images/icon-travel.png" alt="Romer-footer images">
+                <span>
+                  Ready to Get Started <br> With Vacations!
+                </span>
+              </div>
+              <div>
+                <a href="#"><i class="fa-solid fa-arrow-up-long"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class=" col-lg-5 my-40">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="index.html"><img src="assets/img/Logo/Roamers Logo final-01.png" class="img-fluid"
+                    alt="logo"></a>
+              </div>
+              <div class="footer-text">
+                <p>
+                  Thank you for choosing our travel site. We are dedicated to providing you with exceptional service and unforgettable travel experiences. Whether you're planning your dream vacation or seeking inspiration for your next adventure, our site is here to assist you every step of the way.
+                 </p>
+              </div>
+              <div class="footer-social-icon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class=" col-lg-3 col-md-6 my-40">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Useful Links</h3>
+              </div>
+              <ul class="p-0">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Community blog</a></li>
+                <li><a href="#"> Work with us</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class=" col-lg-4 col-md-6 mb-50">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Newsletter</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <p>
+                  Subscribe our newsletter to get our latest update & news.
+                </p>
+              </div>
+              <div class="subscribe-form">
+                <form action="#">
+                  <input type="text" placeholder="Email Address">
+                  <button><i class="fab fa-telegram-plane"></i></button>
+                </form>
+              </div>
+              <p class="newslet">
+                <i class="fa-regular fa-circle-check"></i> I agree to all terms and policies
+              </p>
+            </div>
+          </div> -->
+          <div class=" col-lg-4 col-md-6 my-40">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Contact</h3>
+              </div>
+            <div>
+              <div class="footer-contact-item">
+                <span><i class="fa-solid fa-phone"></i></span>
+                <div class="fc-inner">
+                  <p>
+                    Drop a Line
+                  </p>
+                  <h3>+91 0000000000</h3>
+                </div>
+              </div>
+              <div class="footer-contact-item">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <div class="fc-inner">
+                  <p>
+                    Email Address
+                  </p>
+                  <h3>roamers@gmail.com</h3>
+                </div>
+              </div>
+              <div class="footer-contact-item">
+                <span ><i class="fa-solid fa-location-dot"></i></span>
+                <div class="fc-inner">
+                  <p>
+                    Visit office
+                  </p>
+                  <h3>583 Main Street, NY, USA</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center text-lg-left">
+            <div class="copyright-text">
+              <p>Copyright &copy; 2023, All Right Reserved <a href="https://codepen.io/anupkumar92/">Romers</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--====== FOOTER END======-->
 
   <!-- ***** All jQuery Plugins ***** -->
 
@@ -1202,9 +1488,13 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
   <!-- Active js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
   <script src="assets/js/active.js"></script>
-
-
 </body>
 
 </html>
