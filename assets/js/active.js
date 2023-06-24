@@ -37,7 +37,7 @@ sliders.forEach(function(slider) {
   var prevBtn = slider.querySelector(".prev-btn");
   var nextBtn = slider.querySelector(".next-btn");
 
-  var slideWidth = slider.offsetWidth / 1;
+  var slideWidth = slider.offsetWidth / 4;
   var currentSlide = 0;
   var totalSlides = sliderContainer.childElementCount;
   var touchStartX = 0;
@@ -52,13 +52,13 @@ sliders.forEach(function(slider) {
   updateButtonVisibility();
 
   function showPrevSlides() {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    currentSlide = Math.max(currentSlide - 1, 0);
     sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
     updateButtonVisibility();
   }
 
   function showNextSlides() {
-    currentSlide = (currentSlide + 1) % totalSlides;
+    currentSlide = Math.min(currentSlide + 1, totalSlides - 4);
     sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
     updateButtonVisibility();
   }
@@ -69,13 +69,22 @@ sliders.forEach(function(slider) {
 
   function handleTouchMove(e) {
     touchEndX = e.touches[0].clientX;
+    var touchDistance = touchStartX - touchEndX;
+
+    // Smooth scrolling by adjusting the transform value based on touch distance
+    sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth - touchDistance}px)`;
   }
 
   function handleTouchEnd() {
-    if (touchStartX - touchEndX > 50) {
+    var touchDistance = touchStartX - touchEndX;
+
+    if (touchDistance > slideWidth / 2) {
       showNextSlides();
-    } else if (touchEndX - touchStartX > 50) {
+    } else if (touchDistance < -slideWidth / 2) {
       showPrevSlides();
+    } else {
+      // Reset the transform value if swipe distance is not significant
+      sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
     }
   }
 
@@ -92,6 +101,7 @@ sliders.forEach(function(slider) {
     }
   }
 });
+
 
 
 // *****Sidebar tab radio content end*****
