@@ -42,6 +42,8 @@ sliders.forEach(function(slider) {
   var totalSlides = sliderContainer.childElementCount;
   var touchStartX = 0;
   var touchEndX = 0;
+  var touchDistanceThreshold = slideWidth * 0.2; // Adjust the threshold as needed
+  var touchSwipeThreshold = slideWidth * 0.3; // Adjust the swipe threshold as needed
 
   prevBtn.addEventListener("click", showPrevSlides);
   nextBtn.addEventListener("click", showNextSlides);
@@ -53,18 +55,25 @@ sliders.forEach(function(slider) {
 
   function showPrevSlides() {
     currentSlide = Math.max(currentSlide - 1, 0);
-    sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
+    slideToCurrent();
     updateButtonVisibility();
   }
 
   function showNextSlides() {
     currentSlide = Math.min(currentSlide + 1, totalSlides - 4);
-    sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
+    slideToCurrent();
     updateButtonVisibility();
+  }
+
+  function slideToCurrent() {
+    var position = -currentSlide * slideWidth;
+    sliderContainer.style.transform = `translateX(${position}px)`;
+    sliderContainer.style.transition = "transform 0.3s ease";
   }
 
   function handleTouchStart(e) {
     touchStartX = e.touches[0].clientX;
+    sliderContainer.style.transition = "";
   }
 
   function handleTouchMove(e) {
@@ -72,19 +81,20 @@ sliders.forEach(function(slider) {
     var touchDistance = touchStartX - touchEndX;
 
     // Smooth scrolling by adjusting the transform value based on touch distance
-    sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth - touchDistance}px)`;
+    var position = -currentSlide * slideWidth - touchDistance;
+    sliderContainer.style.transform = `translateX(${position}px)`;
   }
 
   function handleTouchEnd() {
     var touchDistance = touchStartX - touchEndX;
 
-    if (touchDistance > slideWidth / 2) {
+    if (touchDistance > touchSwipeThreshold) {
       showNextSlides();
-    } else if (touchDistance < -slideWidth / 2) {
+    } else if (touchDistance < -touchSwipeThreshold) {
       showPrevSlides();
     } else {
       // Reset the transform value if swipe distance is not significant
-      sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
+      slideToCurrent();
     }
   }
 
@@ -101,7 +111,6 @@ sliders.forEach(function(slider) {
     }
   }
 });
-
 
 
 // *****Sidebar tab radio content end*****
