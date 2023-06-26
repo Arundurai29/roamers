@@ -171,6 +171,50 @@ img {
 .sub-head {
   color: #00b3ff;
 }
+.first-header {
+  background: #094067;
+  z-index: 100;
+}
+.first-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fs1 {
+  display: flex;
+}
+.fs1 p {
+  color: #ffff;
+  font-size: 16px;
+  margin: 0;
+  margin-right: 20px;
+}
+.fs1 i {
+  margin: 0px 10px 0px 0px;
+}
+.fs2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fs2 a {
+  font-size: 16px;
+  color: #ffff;
+  margin: 0px 10px;
+}
+.fs-list {
+  display: flex;
+  margin: 0;
+  background: #0b3654;
+  padding: 10px;
+  margin-left: 20px;
+}
+.fs-list li {
+  margin: 0px 5px;
+}
+.fs-list a {
+  color: #ffff;
+}
 .btn {
   padding: 10px 30px !important;
   color: #fff !important;
@@ -188,10 +232,21 @@ img {
   width: 100px;
 }
 .navbar {
-  padding-top: 0;
-  padding-bottom: 0;
-  background: #094067;
+  background: #09406700;
   z-index: 999;
+  padding: 0 !important;
+  position: fixed !important;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+  position: -webkit-sticky;
+  position: sticky;
+}
+nav.scrolled {
+  background: #094067;
+  top: 0;
+}
+#navbarNav {
+  justify-content: end;
 }
 .nav-link {
   color: #fff !important;
@@ -1185,8 +1240,8 @@ input[type="checkbox"]::backdrop {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  margin-top: -127px;
+  /* height: 100vh;
+  margin-top: -127px; */
 }
 .home::before {
   position: absolute;
