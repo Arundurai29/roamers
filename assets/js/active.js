@@ -37,43 +37,50 @@ sliders.forEach(function(slider) {
   var prevBtn = slider.querySelector(".prev-btn");
   var nextBtn = slider.querySelector(".next-btn");
 
-  var slideWidth = slider.offsetWidth / 4;
+  var slideWidth = slider.offsetWidth / 4; // Default slide width for desktop
+  var slidesToShow = 4; // Number of slides to show at a time on desktop
   var currentSlide = 0;
   var totalSlides = sliderContainer.childElementCount;
   var touchStartX = 0;
   var touchEndX = 0;
-  var touchDistanceThreshold = slideWidth * 0.2; // Adjust the threshold as needed
-  var touchSwipeThreshold = slideWidth * 0.3; // Adjust the swipe threshold as needed
+  var isDesktop = window.innerWidth >= 768; // Adjust the breakpoint as needed
 
-  prevBtn.addEventListener("click", showPrevSlides);
-  nextBtn.addEventListener("click", showNextSlides);
+  if (!isDesktop) {
+    slideWidth = slider.offsetWidth / 1; // Slide width for mobile
+    slidesToShow = 1; // Number of slides to show at a time on mobile
+  }
+
+  prevBtn.addEventListener("click", handlePrevClick);
+  nextBtn.addEventListener("click", handleNextClick);
   sliderContainer.addEventListener("touchstart", handleTouchStart);
   sliderContainer.addEventListener("touchmove", handleTouchMove);
   sliderContainer.addEventListener("touchend", handleTouchEnd);
 
   updateButtonVisibility();
 
-  function showPrevSlides() {
-    currentSlide = Math.max(currentSlide - 1, 0);
-    slideToCurrent();
+  function handlePrevClick() {
+    if (isDesktop) {
+      currentSlide = Math.max(currentSlide - 1, 0);
+    } else {
+      currentSlide = Math.max(currentSlide - 1, 0);
+      currentSlide = Math.min(currentSlide, totalSlides - 1);
+    }
+    sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
     updateButtonVisibility();
   }
 
-  function showNextSlides() {
-    currentSlide = Math.min(currentSlide + 1, totalSlides - 4);
-    slideToCurrent();
+  function handleNextClick() {
+    if (isDesktop) {
+      currentSlide = Math.min(currentSlide + 1, totalSlides - slidesToShow);
+    } else {
+      currentSlide = Math.min(currentSlide + 1, totalSlides - 1);
+    }
+    sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
     updateButtonVisibility();
-  }
-
-  function slideToCurrent() {
-    var position = -currentSlide * slideWidth;
-    sliderContainer.style.transform = `translateX(${position}px)`;
-    sliderContainer.style.transition = "transform 0.3s ease";
   }
 
   function handleTouchStart(e) {
     touchStartX = e.touches[0].clientX;
-    sliderContainer.style.transition = "";
   }
 
   function handleTouchMove(e) {
@@ -81,20 +88,19 @@ sliders.forEach(function(slider) {
     var touchDistance = touchStartX - touchEndX;
 
     // Smooth scrolling by adjusting the transform value based on touch distance
-    var position = -currentSlide * slideWidth - touchDistance;
-    sliderContainer.style.transform = `translateX(${position}px)`;
+    sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth - touchDistance}px)`;
   }
 
   function handleTouchEnd() {
     var touchDistance = touchStartX - touchEndX;
 
-    if (touchDistance > touchSwipeThreshold) {
-      showNextSlides();
-    } else if (touchDistance < -touchSwipeThreshold) {
-      showPrevSlides();
+    if (touchDistance > slideWidth / 2) {
+      handleNextClick();
+    } else if (touchDistance < -slideWidth / 2) {
+      handlePrevClick();
     } else {
       // Reset the transform value if swipe distance is not significant
-      slideToCurrent();
+      sliderContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
     }
   }
 
@@ -102,7 +108,7 @@ sliders.forEach(function(slider) {
     if (currentSlide === 0) {
       prevBtn.style.display = "none";
       nextBtn.style.display = "block";
-    } else if (currentSlide >= totalSlides - 4) {
+    } else if (currentSlide >= totalSlides - slidesToShow) {
       prevBtn.style.display = "block";
       nextBtn.style.display = "none";
     } else {
@@ -112,6 +118,7 @@ sliders.forEach(function(slider) {
   }
 });
 
+// Detect screen size changes
 
 // *****Sidebar tab radio content end*****
 
@@ -175,3 +182,16 @@ function moveRight() {
 btnLeft.addEventListener("click", moveLeft);
 btnRight.addEventListener("click", moveRight);
 window.addEventListener("resize", moveSlider);
+
+
+var navbar = document.querySelector('nav')
+
+window.onscroll = function() {
+
+  // pageYOffset or scrollY
+  if (window.scrollY  > 100) {
+    navbar.classList.add('scrolled')
+  } else {
+    navbar.classList.remove('scrolled')
+  }
+}
