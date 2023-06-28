@@ -159,6 +159,10 @@
   .inner {
     padding-top: 15px;
   }
+  .silder-inner {
+    padding: 20px 30px;
+    background: #ffff;
+  }
   .container-fluid {
     width: 100% !important;
   }
@@ -275,9 +279,33 @@
   .slider-container {
     padding-bottom: 0px !important;
   }
-  .prev-btn,
+  /* .prev-btn,
   .next-btn {
     display: none !important;
+  } */
+  .next-btn {
+    right: 20px !important;
+    background: #094067;
+  }
+  .prev-btn {
+    left: 9px;
+    width: 55px;
+  }
+  .next-btn:hover {
+    background: #00b3ff;
+    color: #fff;
+  }
+  .slider-item1 a {
+    width: 81%;
+  }
+  .nav-link.active {
+    display: inline;
+  }
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 49% !important;
+    height: 55px;
   }
   .tab-con {
     padding: 20px;
