@@ -22,7 +22,7 @@
 
 body {
   font-family: "Heebo", sans-serif;
-  font-size: 14px;
+  font-size: 14px !important;
   line-height: 24px;
   font-weight: 400;
   color: #222;
@@ -1514,11 +1514,6 @@ html {
   right: 10px;
 }
 
-@media screen and (max-width: 500px) {
-  .slide-box {
-    padding: 0 55px;
-  }
-}
 .star {
   display: flex;
   justify-content: center;
@@ -1720,4 +1715,32 @@ textarea {
   border: 3px solid #3a3a3a;
   border-radius: 5px;
   padding: 20px;
+}
+.above-card {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  position: absolute;
+  top: 27px;
+  padding: 0px 20px;
+}
+.above-card p {
+  background: #094067;
+  padding: 0px 13px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+.above-card h4 {
+  background: #f7921e;
+  padding: 0px 13px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  display: grid;
+  place-items: center;
 }
