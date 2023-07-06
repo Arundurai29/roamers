@@ -1,6 +1,6 @@
 @media (max-width: 600px) {
   .home-behind-content {
-    font-size: 78px;
+    font-size: 74px;
   }
   .nav-button {
     display: none;
@@ -70,13 +70,12 @@
     padding: 20px;
   }
   .faq {
-    padding: 0px;
-    margin: 40px 20px;
+    padding: 40px 20px;
   }
 
   .trip-home {
-    padding: 200px 0px 50px !important;
-    margin-top: -187px;
+    padding: 60px 0px 50px !important;
+    margin-top: 0;
   }
   .trip-inner h2 {
     font-size: 16px;
@@ -103,16 +102,20 @@
     font-size: 26px;
   }
   .travel-des {
-    padding: 70px 30px 30px !important;
+    padding: 30px 30px 30px !important;
   }
   .Desitination {
-    padding: 100px 0px 0px !important;
+    padding: 60px 0px 10px !important;
+  }
+
+  .tabgroup div {
+    padding: 20px;
   }
   .ilt-up {
     padding: 0px 0px 50px !important;
   }
   .acc-inner {
-    padding: 0px !important;
+    padding: 15px !important;
   }
   .accordion-button {
     font-size: 16px !important;
@@ -157,10 +160,10 @@
     margin: 0;
   }
   .inner {
-    padding-top: 15px;
+    padding-top: 5px;
   }
   .silder-inner {
-    padding: 20px 30px;
+    padding: 20px !important;
     background: #ffff;
   }
   .container-fluid {
@@ -356,5 +359,20 @@
   }
   .slide-box {
     padding: 0 40px 0px 77px;
+  }
+  .itinerary-logo-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-slide a {
+    width: 98%;
+  }
+  .swiper-slide img {
+    max-height: 150px;
+    object-fit: cover !important;
   }
 }
