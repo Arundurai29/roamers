@@ -106,7 +106,7 @@ sliders.forEach(function(slider) {
 
   function updateButtonVisibility() {
     if (currentSlide === 0) {
-      prevBtn.style.display = "none";
+      prevBtn.style.display = "block";
       nextBtn.style.display = "block";
     } else if (currentSlide >= totalSlides - slidesToShow) {
       prevBtn.style.display = "block";
@@ -195,3 +195,46 @@ window.onscroll = function() {
     navbar.classList.remove('scrolled')
   }
 }
+
+
+window.addEventListener('DOMContentLoaded', function() {
+  const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 4,
+      },
+      240: {
+        slidesPerView: 1.1,
+      },
+    },
+  });
+
+
+});
+
+
+window.addEventListener('DOMContentLoaded', function() {
+  const swiper = new Swiper('.swiper-container1', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 3,
+      },
+      240: {
+        slidesPerView: 1.1,
+      },
+    },
+  });
+
+});
