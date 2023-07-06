@@ -12,6 +12,7 @@
 
   <!-- Title  -->
   <title>Romers</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   <!-- Favicon  -->
   <link rel="icon" href="assets/img/favicon.png" />
@@ -43,7 +44,7 @@
       position: relative;
     }
 
-    .trip-about::before {
+    /* .trip-about::before {
       background: url(assets/img/images/dot1.png);
       background-repeat: no-repeat;
       position: absolute;
@@ -63,7 +64,7 @@
       right: -60px;
       height: 100px;
       width: 100px;
-    }
+    } */
 
     .travel-des {
       padding: 30px;
@@ -112,43 +113,131 @@
       margin-bottom: 30px;
       padding: 20px 24px;
     }
+    .silder-inner h3 {
+      font-size: 12px;
+      color: #00B3FF;
+      font-weight: 400;
+    }
+    .silder-inner h2 {
+    color: #094067;
+    font-size: 20px;
+    margin-bottom: 0.7rem;
+}
+.silder-inner h4 {
+    display: flex;
+    align-items: center;
+    color: #5F6C7B;
+    font-size: 12px;
+    font-weight: 400;
+}
+.silder-inner h4>img {
+    width: 20px !important;
+    height: 20px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: -7px;
+}
+.silder-inner1 p {
+    border: none !important;
+    margin-bottom: 0px !important;
+    font-size: 12px;
+    font-weight: 400;
+    color: #5F6C7B;
+    padding-bottom: 10px;
+}
+.silder-inner span {
+    display: flex;
+    align-items: center;
+    color: #4EC0DB;
+    font-size: 16px;
+    margin-left: 5px;
+    font-weight: 600;
+}
+.silder-inner {
+    padding: 30px 20px;
+    background: #ffff;
+}
+.short-trips{
+  background: none;
+  padding-bottom: 60px;
+}
+.container-fluid {
+      width: 95%;
+      padding-right: var(--bs-gutter-x, .75rem);
+      padding-left: var(--bs-gutter-x, .75rem);
+      margin-right: auto;
+      margin-left: auto;
+    }
   </style>
 </head>
 
 <body>
-  <!-- ***** Header Start ***** -->
-  <nav class="navbar navbar-expand-lg navbar-light ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="assets/img/Logo/Roamers .png" alt="Romers-logo"></a>
+   <!-- ***** Header Start ***** -->
+   <section class="first-header">
+    <div class="container">
+      <div class="first-section">
+        <div class="fs1">
+          <p>
+            <i class="fa-solid fa-location-dot"></i> 250 Main Street, 2nd Floor, USA
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>contact@roamers.com
+          </p>
+        </div> 
+        <div class="fs2">
+          <a href="#">Booking Now</a>
+          <a href="#">About</a>
+          <ul class="fs-list">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="navbar navbar-expand-lg navbar-light " id="mynav">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="assets/img/Logo/Roamers.png" alt="Romers-logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav main-nav">
+        <ul class="navbar-nav m-0 main-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ABOUT US </a>
+            <a class="nav-link" href="#">About </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">PACKAGES</a>
+            <a class="nav-link" href="#">Packages</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> DESTINATIONS</a>
+            <a class="nav-link" href="#"> Destinaitons</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">BLOGS</a>
+            <a class="nav-link" href="#">Blogs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT US</a>
+            <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
       </div>
-      <div class="nav-button">
+      <!-- <div class="nav-button">
         <a href="" class="nav-btn btn"><i class="fa-solid fa-user-group"></i> Register</a>
-      </div>
+      </div> -->
     </div>
   </nav>
   <!-- ***** Header End ***** -->
@@ -167,7 +256,7 @@
         </div>
         <div class="col-md-4 col-4">
           <div class="trip-inner">
-            <h3><i class="fa-solid fa-stopwatch"></i></h3>
+            <h3><i class="fa-solid fa-calendar-days"></i></h3>
             <p>Duration</p>
             <h2>5 Days 4 Nights</h2>
           </div>
@@ -204,9 +293,9 @@
         </div>
         <div class="col-md-7" style="display: grid; place-items: center;">
           <div class="travel-des">
-            <h2 class="head text-center text-md-left ">
+            <!-- <h2 class="head text-center text-md-left ">
               Overview
-            </h2>
+            </h2> -->
             <p>
               Welcome to our travel site! Here you'll find all the information you need to plan your next adventure and make the most of your travel experiences. Whether you're a seasoned traveler or embarking on your first trip, we're here to provide you with valuable resources, tips, and inspiration. </p>
             <a href="#" class="btn">Read More</a>
@@ -224,7 +313,7 @@
   <section class="ilt-up">
     <div class="container">
       <div class="row">
-        <div class="col-md-7" style="padding: 20px 40px; ">
+        <div class="col-md-7" style="padding: 0px 40px; ">
           <div class="accordion" id="accordionExample">
             <h2 class="head text-center text-md-left">
               Itinerary
@@ -239,6 +328,29 @@
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
+                  <div class="itinerary-logo-group">
+                    <div class="itinerary-logo-content">
+                      <p>Supa Dam</p>
+                      <p>River Rafting</p>
+                      <p>Syntheri Rocks</p>
+                      <P>crocodile park</P>
+                      <P>kAIL river</P>
+                    </div>
+                    <div class="itinerary-logo">
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        private vehicle 
+                       </p>
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        Tent
+                       </p>
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        Breakfast & Dinner
+                       </p>
+                    </div>
+                  </div>
                   <ul class="acc-inner">
                     <li>
                       Hey, wlcome to the land of coconuts! Meet our Roamers team and captains at Kochi as our exciting
@@ -273,6 +385,29 @@
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
+                  <div class="itinerary-logo-group">
+                    <div class="itinerary-logo-content">
+                      <p>Supa Dam</p>
+                      <p>River Rafting</p>
+                      <p>Syntheri Rocks</p>
+                      <P>crocodile park</P>
+                      <P>kAIL river</P>
+                    </div>
+                    <div class="itinerary-logo">
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        private vehicle 
+                       </p>
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        Tent
+                       </p>
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        Breakfast & Dinner
+                       </p>
+                    </div>
+                  </div>
                   <ul class="acc-inner">
                     <li>
                       Let's start our day bright and early, heading straight to the Vagamon Meadows. Explore the serene
@@ -307,6 +442,29 @@
               <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
+                  <div class="itinerary-logo-group">
+                    <div class="itinerary-logo-content">
+                      <p>Supa Dam</p>
+                      <p>River Rafting</p>
+                      <p>Syntheri Rocks</p>
+                      <P>crocodile park</P>
+                      <P>kAIL river</P>
+                    </div>
+                    <div class="itinerary-logo">
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        private vehicle 
+                       </p>
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        Tent
+                       </p>
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        Breakfast & Dinner
+                       </p>
+                    </div>
+                  </div>
                   <ul class="acc-inner">
                     <li>
                       Post breakfast, bid farewell to the hills as we embark on our journey towards the coastal town of
@@ -340,6 +498,29 @@
               <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
+                  <div class="itinerary-logo-group">
+                    <div class="itinerary-logo-content">
+                      <p>Supa Dam</p>
+                      <p>River Rafting</p>
+                      <p>Syntheri Rocks</p>
+                      <P>crocodile park</P>
+                      <P>kAIL river</P>
+                    </div>
+                    <div class="itinerary-logo">
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        private vehicle 
+                       </p>
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        Tent
+                       </p>
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        Breakfast & Dinner
+                       </p>
+                    </div>
+                  </div>
                   <ul class="acc-inner">
                     <li>
                       Start the day with a surfing lesson at Kappil Beach, which is known for its consistent waves and
@@ -369,6 +550,29 @@
               <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
+                  <div class="itinerary-logo-group">
+                    <div class="itinerary-logo-content">
+                      <p>Supa Dam</p>
+                      <p>River Rafting</p>
+                      <p>Syntheri Rocks</p>
+                      <P>crocodile park</P>
+                      <P>kAIL river</P>
+                    </div>
+                    <div class="itinerary-logo">
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        private vehicle 
+                       </p>
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        Tent
+                       </p>
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        Breakfast & Dinner
+                       </p>
+                    </div>
+                  </div>
                   <ul class="acc-inner">
                     <li>
                       Post breakast, Say goodbye to Varkala. We'll checkout from our hotel and driving to Alleppey which
@@ -403,6 +607,29 @@
               <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
+                  <div class="itinerary-logo-group">
+                    <div class="itinerary-logo-content">
+                      <p>Supa Dam</p>
+                      <p>River Rafting</p>
+                      <p>Syntheri Rocks</p>
+                      <P>crocodile park</P>
+                      <P>kAIL river</P>
+                    </div>
+                    <div class="itinerary-logo">
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        private vehicle 
+                       </p>
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        Tent
+                       </p>
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        Breakfast & Dinner
+                       </p>
+                    </div>
+                  </div>
                   <ul class="acc-inner">
                     <li>
                       After Breakfast on houseboat, let's checkout and begin day by visiting the Alappuzha Beach, where
@@ -438,6 +665,29 @@
               <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
+                  <div class="itinerary-logo-group">
+                    <div class="itinerary-logo-content">
+                      <p>Supa Dam</p>
+                      <p>River Rafting</p>
+                      <p>Syntheri Rocks</p>
+                      <P>crocodile park</P>
+                      <P>kAIL river</P>
+                    </div>
+                    <div class="itinerary-logo">
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        private vehicle 
+                       </p>
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        Tent
+                       </p>
+                       <p>
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        Breakfast & Dinner
+                       </p>
+                    </div>
+                  </div>
                   <ul class="acc-inner">
                     <li>
                       After breakfast, we'll depart from Alleppey and drive back to Kochi.
@@ -459,17 +709,15 @@
           <div class="tab-section">
             <div class="wrapper">
               <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                <li><a href="#tab1" class="active">Inclusions</a></li>
-                <li><a href="#tab2">Exclusions</a></li>
+                <li><a href="#tab1" class="active"><i class="fa-solid fa-check"></i>Inclusions</a></li>
+                <li><a href="#tab2"><i class="fa-solid fa-xmark"></i>Exclusions</a></li>
               </ul>
               <section id="first-tab-group" class="tabgroup">
                 <div id="tab1">
-                  <h2>Heading 1</h2>
                   <p>Our travel site offers comprehensive destination guides that provide detailed information about various destinations. From popular attractions to local customs, our guides cover all aspects of your chosen location, helping you make informed decisions and plan your itinerary effectively.
                   </p>
                 </div>
                 <div id="tab2">
-                  <h2>Heading 2</h2>
                   <p>While our travel site offers a wide range of valuable resources and support, it's important to note the exclusions. The actual booking and payment processes for flights, accommodations, and other travel services generally take place on third-party websites or directly with the service providers themselves.
                    <br>
                     Travel insurance is not provided directly through our site. While we emphasize the importance of travel insurance, it is typically obtained separately through insurance providers to ensure you have appropriate coverage for unforeseen circumstances.</p>
@@ -481,7 +729,7 @@
         <div class="col-md-5">
           <div class="sticky-sidebar">
             <h2 class="head text-center text-md-left ">
-              Upcoming <span class="sub-head">Slot</span>
+              Upcoming Slot
             </h2>
             <div class="trip-tab">
               <ul class="nav nav-pills trip-nav mb-3" id="pills-tab" role="tablist">
@@ -560,7 +808,7 @@
 
   <!-- ***** why choose us start***** -->
 
-  <section class="why-us">
+  <!-- <section class="why-us">
     <div class="container position-relative">
       <h2 class="head text-white mb-2">
         why choose us
@@ -596,16 +844,16 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- ***** why choose us end***** -->
 
 
   <!--====== CUSTOMISE YOUR TRIP Start ======-->
 
-  <section class="customise_your_trip mt-60  ">
+  <section class="customise_your_trip  ">
     <div class="container-fluid">
       <h2 class="head">
-        Spots/ <span class="sub-head">activity</span>
+        Spots/activity 
       </h2>
       <div class="row">
         <div class="col-md-12">
@@ -814,235 +1062,195 @@
   </section>
   <!--====== faq END ======-->
 
-  <!--====== SIMILER TRIP Start ======-->
-  <!-- *****short break trips end ***** -->
+<!-- *****short break trips end ***** -->
 
-  <section class="upcoming-trips my-60">
-    <h2 class="head">
-      Similar <span class="sub-head">Trips</span> <br>
-      Popular Destination
-    </h2>
-    <div class="container-fluid">
-      <div class="slider">
-        <div class="slider-container sc1">
-          <div class="slider-item">
-            <a href="#">
-              <img src="assets/img/images/we1.png" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <div class="inner">
-                  <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
-                </div>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner">
-                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
-                    15, 22 2023</h4>
-                  <h4>Starts at <span>₹75,000</span> </h4>
-                </div>
+<section class="Popular-Destination">
+  <h2 class="head">
+    Popular Destination
+  </h2>
+  <div class="container-fluid">
+    <div class="swiper-container1">
+      <div class="swiper-wrapper">
+     
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/we1.png" alt="roamers-Gallery">
+            <div class="silder-inner silder-inner1">
+              <div class="inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelon
+                  </h4>
               </div>
-            </a>
-          </div>
-          <div class="slider-item">
-            <a href="#">
-              <img src="assets/img/images/we2.png" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <div class="inner">
-                  <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
-                </div>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner">
-                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
-                    15, 22 2023</h4>
-                  <h4>Starts at <span>₹75,000</span> </h4>
-                </div>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner">
+                <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                  15, 22 2023</h4>
+                <h4>Starts at <span>₹75,000</span> </h4>
               </div>
-            </a>
-          </div>
-          <div class="slider-item">
-            <a href="#">
-              <img src="assets/img/images/we3.png" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <div class="inner">
-                  <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
-                </div>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner">
-                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
-                    15, 22 2023</h4>
-                  <h4>Starts at <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item">
-            <a href="#">
-              <img src="assets/img/images/we1.png" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <div class="inner">
-                  <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
-                </div>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner">
-                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
-                    15, 22 2023</h4>
-                  <h4>Starts at <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item">
-            <a href="#">
-              <img src="assets/img/images/we2.png" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <div class="inner">
-                  <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
-                </div>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner">
-                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
-                    15, 22 2023</h4>
-                  <h4>Starts at <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item">
-            <a href="#">
-              <img src="assets/img/images/we3.png" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <div class="inner">
-                  <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
-                </div>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner">
-                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
-                    15, 22 2023</h4>
-                  <h4>Starts at <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item">
-            <a href="#">
-              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <div class="inner">
-                  <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
-                </div>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner">
-                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
-                    15, 22 2023</h4>
-                  <h4>Starts at <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item">
-            <a href="#">
-              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <div class="inner">
-                  <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
-                </div>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner">
-                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
-                    15, 22 2023</h4>
-                  <h4>Starts at <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item">
-            <a href="#">
-              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <div class="inner">
-                  <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
-                </div>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner">
-                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
-                    15, 22 2023</h4>
-                  <h4>Starts at <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item">
-            <a href="#">
-              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <div class="inner">
-                  <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
-                </div>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner">
-                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
-                    15, 22 2023</h4>
-                  <h4>Starts at <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item">
-            <a href="#">
-              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <div class="inner">
-                  <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
-                </div>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner">
-                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
-                    15, 22 2023</h4>
-                  <h4>Starts at <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
-        <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
-      </div>
-    </div>
-  </section>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/we2.png" alt="roamers-Gallery">
+            <div class="silder-inner silder-inner1">
+              <div class="inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelon
+                  </h4>
+              </div>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner">
+                <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                  15, 22 2023</h4>
+                <h4>Starts at <span>₹75,000</span> </h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/we3.png" alt="roamers-Gallery">
+            <div class="silder-inner silder-inner1">
+              <div class="inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona 
+                  </h4>
+              </div>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner">
+                <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                  15, 22 2023</h4>
+                <h4>Starts at <span>₹75,000</span> </h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/bp1.png" alt="roamers-Gallery">
+            <div class="silder-inner silder-inner1 ">
+              <div class="inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona 
+                  </h4>
+              </div>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon"> Barcelona, Ibiza, Valencia, </p>
+              <div class="inner">
+                <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                  15, 22 2023</h4>
+                <h4>Starts at <span>₹75,000</span> </h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/bp1.png" alt="roamers-Gallery">
+            <div class="silder-inner silder-inner1">
+              <div class="inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona
+                  </h4>
+              </div>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner">
+                <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                  15, 22 2023</h4>
+                <h4>Starts at <span>₹75,000</span> </h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/bp2.png" alt="roamers-Gallery">
+            <div class="silder-inner silder-inner1">
+              <div class="inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona                   </h4>
+              </div>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner">
+                <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                  15, 22 2023</h4>
+                <h4>Starts at <span>₹75,000</span> </h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/bp3.png" alt="roamers-Gallery">
+            <div class="silder-inner silder-inner1">
+              <div class="inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona
+                  </h4>
+              </div>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner">
+                <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                  15, 22 2023</h4>
+                <h4>Starts at <span>₹75,000</span> </h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
+            <div class="silder-inner silder-inner1">
+              <div class="inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona
+                  </h4>
+              </div>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner">
+                <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                  15, 22 2023</h4>
+                <h4>Starts at <span>₹75,000</span> </h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
+            <div class="silder-inner silder-inner1">
+              <div class="inner">
+                <h3>12 DAYS / 11 NIGHTS</h3>
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona
+                  </h4>
+              </div>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner">
+                <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                  15, 22 2023</h4>
+                <h4>Starts at <span>₹75,000</span> </h4>
+              </div>
+            </div>
+          </a>
+        </div>
 
-  <!-- *****  short break trips  end***** -->
-  <!--====== SIMILER TRIP END ======-->
+        <!-- Add more swiper-slide elements for additional images -->
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+<!--====== quotes End ======-->
 
 <!--====== FOOTER START======-->
 <footer class="footer-section">
@@ -1077,7 +1285,7 @@
         </div>
       </div>
     </div> -->
-    <div class="footer-content pt-5 pb-5">
+    <div class="footer-content pt-5 ">
       <div class="row">
         <div class=" col-lg-5 my-40">
           <div class="footer-widget">
@@ -1098,7 +1306,8 @@
             </div>
           </div>
         </div>
-        <div class=" col-lg-3 col-md-6 my-40">
+      
+        <div class=" col-lg-2 col-md-6 col-6 my-40">
           <div class="footer-widget">
             <div class="footer-widget-heading">
               <h3>Useful Links</h3>
@@ -1112,28 +1321,19 @@
             </ul>
           </div>
         </div>
-        <!-- <div class=" col-lg-4 col-md-6 mb-50">
+        <div class=" col-lg-2 col-md-6 col-6 my-40 d-none d-md-block">
           <div class="footer-widget">
             <div class="footer-widget-heading">
-              <h3>Newsletter</h3>
+              <h3>Trip Links</h3>
             </div>
-            <div class="footer-text mb-25">
-              <p>
-                Subscribe our newsletter to get our latest update & news.
-              </p>
-            </div>
-            <div class="subscribe-form">
-              <form action="#">
-                <input type="text" placeholder="Email Address">
-                <button><i class="fab fa-telegram-plane"></i></button>
-              </form>
-            </div>
-            <p class="newslet">
-              <i class="fa-regular fa-circle-check"></i> I agree to all terms and policies
-            </p>
+            <ul class="p-0">
+              <li><a href="#">Upcoming Trips</a></li>
+              <li><a href="#">Backpacking Trips</a></li>
+              <li><a href="#"> Short Trips</a></li>
+            </ul>
           </div>
-        </div> -->
-        <div class=" col-lg-4 col-md-6 my-40">
+        </div>
+        <div class=" col-lg-3 col-md-6 col-6 my-40">
           <div class="footer-widget">
             <div class="footer-widget-heading">
               <h3>Contact</h3>
@@ -1200,11 +1400,32 @@
   <script src="assets/js/plugins/plugins.min.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <!-- Active js -->
   <script src="assets/js/active.js"></script>
 
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+  const swiper = new Swiper('.swiper-container1', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 3,
+      },
+      240: {
+        slidesPerView: 1,
+      },
+    },
+  });
 
+});
+</script>
 </body>
 
 </html>
