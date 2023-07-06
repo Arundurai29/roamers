@@ -130,7 +130,7 @@ ul li {
   list-style: none;
 }
 .pt-15 {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 .pt-10 {
   padding-top: 10px;
@@ -392,6 +392,9 @@ nav.scrolled {
 .accordion-item {
   border-radius: 10px 10px 0px 0px;
   border: none !important;
+}
+.accordion h2 {
+  margin-bottom: 3.5rem;
 }
 .acc-inner {
   padding: 10px 20px;
@@ -657,14 +660,15 @@ nav.scrolled {
 }
 
 .silder-pad {
-  margin: 20px 20px;
+  margin: 0px;
   position: relative;
   overflow: hidden;
 }
 
 .slider-item2 img {
-  height: 350px;
+  height: 400px;
   transition: 0.3s ease-in-out;
+  object-fit: cover;
 }
 
 .slid-img::after {
@@ -864,13 +868,14 @@ transition: opacity 0.3s ease, transform 0.3s ease; */
 .faq {
   padding: 60px;
   background: rgba(78, 192, 219, 0.05);
+  background-image: url(/assets/img/images/world2.png);
+  background-size: contain;
+  background-position: bottom;
 }
 .Popular-Destination {
   padding: 60px 0px;
 }
-.customise_your_trip {
-  padding-bottom: 60px;
-}
+
 .similer-trip {
   margin: 60px;
 }
@@ -1104,7 +1109,7 @@ ul {
   margin: auto;
 }
 .nav-item {
-  padding: 10px 0px;
+  padding: 10px 0px 10px;
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -1163,7 +1168,7 @@ input[type="checkbox"]::backdrop {
   margin: 0;
 }
 .trip-form a {
-  margin: 30px 50px;
+  margin: 30px 0px;
 }
 .inquiry {
   background: #ffffff !important;
