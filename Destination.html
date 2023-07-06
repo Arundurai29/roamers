@@ -162,7 +162,7 @@
   padding-bottom: 60px;
 }
 .container-fluid {
-      width: 95%;
+      width: 96%;
       padding-right: var(--bs-gutter-x, .75rem);
       padding-left: var(--bs-gutter-x, .75rem);
       margin-right: auto;
@@ -851,12 +851,9 @@
   <!--====== CUSTOMISE YOUR TRIP Start ======-->
 
   <section class="customise_your_trip  ">
-    <div class="container-fluid">
       <h2 class="head">
         Spots/activity 
       </h2>
-      <div class="row">
-        <div class="col-md-12">
           <div class="slider">
             <div class="slider-container">
               <div class="slider-item2">
@@ -1003,9 +1000,6 @@
             <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
             <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
           </div>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- ***** Gallery start ***** -->
@@ -1415,6 +1409,9 @@
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
+      1550: {
+        slidesPerView: 4,
+      },
       640: {
         slidesPerView: 3,
       },
@@ -1425,6 +1422,19 @@
   });
 
 });
+</script>
+<script>
+  var navbar = document.querySelector('nav')
+
+window.onscroll = function() {
+
+  // pageYOffset or scrollY
+  if (window.scrollY  > 100) {
+    navbar.classList.add('scrolled')
+  } else {
+    navbar.classList.remove('scrolled')
+  }
+}
 </script>
 </body>
 
