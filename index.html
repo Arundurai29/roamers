@@ -12,6 +12,7 @@
 
   <!-- Title  -->
   <title>Romers</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   <!-- slider css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -75,7 +76,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light " id="mynav">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="assets/img/Logo/Roamers .png" alt="Romers-logo"></a>
+      <a class="navbar-brand" href="#"><img src="assets/img/Logo/Roamers.png" alt="Romers-logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -83,22 +84,22 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav m-0 main-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ABOUT US </a>
+            <a class="nav-link" href="#">About </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">PACKAGES</a>
+            <a class="nav-link" href="#">Packages</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> DESTINATIONS</a>
+            <a class="nav-link" href="#"> Destinaitons</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">BLOGS</a>
+            <a class="nav-link" href="#">Blogs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT US</a>
+            <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
       </div>
@@ -153,9 +154,9 @@
   <!-- ***** icon TRIPS Start ***** -->
   <section id="slider" class="pt-5">
     <div class="container">
-      <h2 class="head">
+      <!-- <h2 class="head">
         Trip <span class="sub-head">Categories</span>
-      </h2>
+      </h2> -->
       <div class="cat">
         <div class="cat-cards">
           <div class="cat-inner">
@@ -233,8 +234,9 @@
       position: relative;
     }
 
-    .slider-item .silder-inner p {
+.silder-inner1 p {
       border: none !important;
+      margin-bottom: 0px !important;
     }
 
     .slider-item2 {
@@ -260,7 +262,7 @@
     }
 
     .silder-pad {
-      margin: 20px 20px;
+      margin:20px 0px;
       position: relative;
       overflow: hidden;
     }
@@ -320,7 +322,7 @@
     .prev-btn,
     .next-btn {
       position: absolute;
-      bottom: -18px;
+      top: 50%;
       z-index: 11;
       transform: translateY(-48%);
       padding: 6px 18px;
@@ -355,7 +357,7 @@
     }
 
     .next-btn {
-      right: 50px;
+      right: 0px;
       background: #094067;
     }
 
@@ -365,15 +367,16 @@
     }
 
     .silder-inner {
-      padding: 20px;
+      padding:30px 20px;
       background: #ffff;
 
     }
 
     .silder-inner h2 {
-      font-size: 24px;
-      margin-bottom: 0.7rem;
       color: #094067;
+      font-size: 20px;
+      margin-bottom: 0.7rem;
+   
     }
 
     .silder-inner p {
@@ -445,7 +448,7 @@
     }
 
     .silder-inner h3 {
-      font-size: 15px;
+      font-size: 12px;
       color: #00B3FF;
       font-weight: 400;
     }
@@ -453,9 +456,11 @@
     .silder-inner p {
       display: flex;
       align-items: center;
-      font-size: 16px;
       color: #5F6C7B;
-      padding-bottom: 20px;
+font-size: 12px;
+font-weight: 400;
+      color: #5F6C7B;
+      padding-bottom: 10px;
       border-bottom: 0.25px solid rgba(0, 0, 0, 0.25);
     }
 
@@ -469,24 +474,24 @@
     .silder-inner h4 {
       display: flex;
       align-items: center;
-      font-size: 16px;
-      color: #094067;
-      font-weight: 400;
+      color: #5F6C7B;
+font-size: 12px;
+font-weight: 400;
     }
 
     .silder-inner h4>img {
       width: 20px !important;
       height: 20px;
       display: inline-block;
-      margin-right: 5px;
+      margin-right: 15px;
       margin-top: -7px;
     }
 
     .silder-inner span {
       display: flex;
       align-items: center;
-      font-size: 20px;
-      color: #00b3ff;
+      color: #4EC0DB;
+font-size: 16px;
       margin-left: 5px;
       font-weight: 600;
     }
@@ -509,7 +514,7 @@
     h5,
     h6 {
       margin-top: 0;
-      margin-bottom: 0.7rem;
+      margin-bottom: 0.5rem;
       font-weight: 500;
       line-height: 1.2;
     }
@@ -527,245 +532,192 @@
     }
 
     .sta {
-      font-size: 18px !important;
       font-weight: 400 !important;
     }
   </style>
   <!-- *****  Backpacking Trips  start***** -->
-
-  <section class="upcoming-trips my-60">
+    
+      <!-- test slider start -->
+  <section class="upcoming-trips container-fluid my-60">
     <h2 class="head">
-      Upcoming <span class="sub-head">Trips</span> Packages
+      Upcoming Trips Packages
     </h2>
-    <div class="container-fluid">
-      <div class="slider">
-        <div class="slider-container sc1">
-          <div class="slider-item1">
-            <a href="#">
-              <img src="assets/img/images/up-com1.png" alt="roamers-Gallery">
-              <!-- <div class="above-card">
-                <p>Featured</p>
-                <h4>10% off</h4>
-              </div> -->
-              <div class="silder-inner">
-                <h3>12 DAYS / 11 NIGHTS</h3>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner pt-15">
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
-                  <h4 class="sta">Starts at </h4>
-                </div>
-                <div class="inner pt-10">
-                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
-                  <h4> <span>₹75,000</span> </h4>
-                </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/up-com1.png" alt="roamers-Gallery">
+            <!-- <div class="above-card">
+              <p>Featured</p>
+              <h4>10% off</h4>
+            </div> -->
+            <div class="silder-inner">
+              <h3>12 DAYS / 11 NIGHTS</h3>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner pt-15">
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona </h4>
+                <h4 class="sta">Starts at </h4>
               </div>
-            </a>
-          </div>
-          <div class="slider-item1">
-            <a href="#">
-              <img src="assets/img/images/up-com2.png" alt=" roamers-Gallery">
-              <div class="silder-inner">
-                <h3>12 DAYS / 11 NIGHTS</h3>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner pt-15">
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
-                  <h4 class="sta">Starts at </h4>
-                </div>
-                <div class="inner pt-10">
-                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
-                  <h4> <span>₹75,000</span> </h4>
-                </div>
+              <div class="inner pt-10">
+                <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                <h4> <span>₹75,000</span> </h4>
               </div>
-            </a>
-          </div>
-          <div class="slider-item1">
-            <a href="#">
-              <img src="assets/img/images/up-com3.png" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <h3>12 DAYS / 11 NIGHTS</h3>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner pt-15">
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
-                  <h4 class="sta">Starts at </h4>
-                </div>
-                <div class="inner pt-10">
-                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
-                  <h4> <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item1">
-            <a href="#">
-              <img src="assets/img/images/up-com4.png" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <h3>12 DAYS / 11 NIGHTS</h3>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner pt-15">
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
-                  <h4 class="sta">Starts at </h4>
-                </div>
-                <div class="inner pt-10">
-                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
-                  <h4> <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item1">
-            <a href="#">
-              <img src="assets/img/images/up-com1.png" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <h3>12 DAYS / 11 NIGHTS</h3>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner pt-15">
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
-                  <h4 class="sta">Starts at </h4>
-                </div>
-                <div class="inner pt-10">
-                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
-                  <h4> <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item1">
-            <a href="#">
-              <img src="assets/img/images/up-com2.png" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <h3>12 DAYS / 11 NIGHTS</h3>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner pt-15">
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
-                  <h4 class="sta">Starts at </h4>
-                </div>
-                <div class="inner pt-10">
-                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
-                  <h4> <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item1">
-            <a href="#">
-              <img src="assets/img/images/up-com3.png" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <h3>12 DAYS / 11 NIGHTS</h3>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner pt-15">
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
-                  <h4 class="sta">Starts at </h4>
-                </div>
-                <div class="inner pt-10">
-                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
-                  <h4> <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item1">
-            <a href="#">
-              <img src="assets/img/images/up-com4.png" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <h3>12 DAYS / 11 NIGHTS</h3>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner pt-15">
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
-                  <h4 class="sta">Starts at </h4>
-                </div>
-                <div class="inner pt-10">
-                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
-                  <h4> <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item1">
-            <a href="#">
-              <img src="assets/img/images/up-com4.png" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <h3>12 DAYS / 11 NIGHTS</h3>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner pt-15">
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
-                  <h4 class="sta">Starts at </h4>
-                </div>
-                <div class="inner pt-10">
-                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
-                  <h4> <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item1">
-            <a href="#">
-              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <h3>12 DAYS / 11 NIGHTS</h3>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner pt-15">
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
-                  <h4 class="sta">Starts at </h4>
-                </div>
-                <div class="inner pt-10">
-                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
-                  <h4> <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item1">
-            <a href="#">
-              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <h3>12 DAYS / 11 NIGHTS</h3>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner pt-15">
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
-                  <h4 class="sta">Starts at </h4>
-                </div>
-                <div class="inner pt-10">
-                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
-                  <h4> <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item1">
-            <a href="#">
-              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <h3>12 DAYS / 11 NIGHTS</h3>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner pt-15">
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona - Madrid</h4>
-                  <h4 class="sta">Starts at </h4>
-                </div>
-                <div class="inner pt-10">
-                  <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
-                  <h4> <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
-        <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/up-com2.png" alt=" roamers-Gallery">
+            <div class="silder-inner">
+              <h3>12 DAYS / 11 NIGHTS</h3>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner pt-15">
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona </h4>
+                <h4 class="sta">Starts at </h4>
+              </div>
+              <div class="inner pt-10">
+                <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                <h4> <span>₹75,000</span> </h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/up-com3.png" alt="roamers-Gallery">
+            <div class="silder-inner">
+              <h3>12 DAYS / 11 NIGHTS</h3>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner pt-15">
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona </h4>
+                <h4 class="sta">Starts at </h4>
+              </div>
+              <div class="inner pt-10">
+                <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                <h4> <span>₹75,000</span> </h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/up-com4.png" alt="roamers-Gallery">
+            <div class="silder-inner">
+              <h3>12 DAYS / 11 NIGHTS</h3>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner pt-15">
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona </h4>
+                <h4 class="sta">Starts at </h4>
+              </div>
+              <div class="inner pt-10">
+                <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                <h4> <span>₹75,000</span> </h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/up-com1.png" alt="roamers-Gallery">
+            <div class="silder-inner">
+              <h3>12 DAYS / 11 NIGHTS</h3>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner pt-15">
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona </h4>
+                <h4 class="sta">Starts at </h4>
+              </div>
+              <div class="inner pt-10">
+                <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                <h4> <span>₹75,000</span> </h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/up-com2.png" alt="roamers-Gallery">
+            <div class="silder-inner">
+              <h3>12 DAYS / 11 NIGHTS</h3>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner pt-15">
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona </h4>
+                <h4 class="sta">Starts at </h4>
+              </div>
+              <div class="inner pt-10">
+                <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                <h4> <span>₹75,000</span> </h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/up-com3.png" alt="roamers-Gallery">
+            <div class="silder-inner">
+              <h3>12 DAYS / 11 NIGHTS</h3>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner pt-15">
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona </h4>
+                <h4 class="sta">Starts at </h4>
+              </div>
+              <div class="inner pt-10">
+                <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                <h4> <span>₹75,000</span> </h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/up-com4.png" alt="roamers-Gallery">
+            <div class="silder-inner">
+              <h3>12 DAYS / 11 NIGHTS</h3>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner pt-15">
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona </h4>
+                <h4 class="sta">Starts at </h4>
+              </div>
+              <div class="inner pt-10">
+                <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                <h4> <span>₹75,000</span> </h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/img/images/up-com4.png" alt="roamers-Gallery">
+            <div class="silder-inner">
+              <h3>12 DAYS / 11 NIGHTS</h3>
+              <h2>Flashpack Spain</h2>
+              <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+              <div class="inner pt-15">
+                <h4><img src="assets/img/images/loc1.svg" alt="second location-icon">Barcelona </h4>
+                <h4 class="sta">Starts at </h4>
+              </div>
+              <div class="inner pt-10">
+                <h4><img src="assets/img/images/date.svg" alt="second location-icon">Jun 15, 22 2023</h4>
+                <h4> <span>₹75,000</span> </h4>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Add more swiper-slide elements for additional images -->
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </section>
+  <!-- test slider end -->
 
   <!-- *****  Backpacking Trips  end***** -->
 
@@ -872,24 +824,25 @@
 
   <!-- *****short break trips end ***** -->
 
-  <section class="upcoming-trips my-60">
+  <section class="strips py-60">
     <h2 class="head">
-      Backpacking <span class="sub-head">Trips</span>
+      Backpacking Trips<span class="sub-head"></span>
     </h2>
     <div class="container-fluid">
-      <div class="slider">
-        <div class="slider-container sc1">
-          <div class="slider-item">
+      <div class="swiper-container1">
+        <div class="swiper-wrapper">
+       
+          <div class="swiper-slide">
             <a href="#">
               <img src="assets/img/images/bp1.png" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <div class="silder-inner silder-inner1">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelo
+                    </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon"> Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon"> Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -898,17 +851,17 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
+          <div class="swiper-slide">
             <a href="#">
               <img src="assets/img/images/bp2.png" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <div class="silder-inner silder-inner1">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona
+                    </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -917,17 +870,17 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
+          <div class="swiper-slide">
             <a href="#">
               <img src="assets/img/images/bp3.png" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <div class="silder-inner silder-inner1">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona
+                    </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -936,17 +889,16 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
+          <div class="swiper-slide">
             <a href="#">
               <img src="assets/img/images/bp1.png" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <div class="silder-inner silder-inner1 ">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona                    </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon"> Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -955,17 +907,36 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="assets/img/images/bp1.png" alt="roamers-Gallery">
+              <div class="silder-inner silder-inner1">
+                <div class="inner">
+                  <h3>12 DAYS / 11 NIGHTS</h3>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona
+                    </h4>
+                </div>
+                <h2>Flashpack Spain</h2>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
+                <div class="inner">
+                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
+                    15, 22 2023</h4>
+                  <h4>Starts at <span>₹75,000</span> </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
             <a href="#">
               <img src="assets/img/images/bp2.png" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <div class="silder-inner silder-inner1">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona
+                    </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -974,17 +945,16 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
+          <div class="swiper-slide">
             <a href="#">
               <img src="assets/img/images/bp3.png" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <div class="silder-inner silder-inner1">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona                     </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -993,17 +963,17 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
+          <div class="swiper-slide">
             <a href="#">
               <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <div class="silder-inner silder-inner1">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona 
+                    </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -1012,17 +982,17 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
+          <div class="swiper-slide">
             <a href="#">
               <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <div class="silder-inner silder-inner1">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona
+                    </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -1031,92 +1001,39 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
-            <a href="#">
-              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <div class="inner">
-                  <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
-                </div>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner">
-                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
-                    15, 22 2023</h4>
-                  <h4>Starts at <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item">
-            <a href="#">
-              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <div class="inner">
-                  <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
-                </div>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner">
-                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
-                    15, 22 2023</h4>
-                  <h4>Starts at <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item">
-            <a href="#">
-              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <div class="inner">
-                  <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
-                </div>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner">
-                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
-                    15, 22 2023</h4>
-                  <h4>Starts at <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
+  
+          <!-- Add more swiper-slide elements for additional images -->
         </div>
-        <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
+    
   </section>
 
   <!-- *****  short break trips  end***** -->
 
   <!-- *****short break trips end ***** -->
 
-  <section class="upcoming-trips my-60">
+  <section class="short-trips py-60">
     <h2 class="head">
-      Weekend <span class="sub-head">Trips</span>
+      Weekend Trips<span class="sub-head"></span>
     </h2>
     <div class="container-fluid">
-      <div class="slider">
-        <div class="slider-container sc1">
-          <div class="slider-item">
+      <div class="swiper-container1">
+        <div class="swiper-wrapper">
+       
+          <div class="swiper-slide">
             <a href="#">
               <img src="assets/img/images/we1.png" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <div class="silder-inner silder-inner1">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona
+                    </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -1125,17 +1042,17 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
+          <div class="swiper-slide">
             <a href="#">
               <img src="assets/img/images/we2.png" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <div class="silder-inner silder-inner1">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona 
+                    </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -1144,17 +1061,17 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
+          <div class="swiper-slide">
             <a href="#">
               <img src="assets/img/images/we3.png" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <div class="silder-inner silder-inner1">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona 
+                    </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -1163,17 +1080,17 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
+          <div class="swiper-slide">
             <a href="#">
-              <img src="assets/img/images/we1.png" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <img src="assets/img/images/bp1.png" alt="roamers-Gallery">
+              <div class="silder-inner silder-inner1 ">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona
+                    </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon"> Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -1182,17 +1099,17 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
+          <div class="swiper-slide">
             <a href="#">
-              <img src="assets/img/images/we2.png" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <img src="assets/img/images/bp1.png" alt="roamers-Gallery">
+              <div class="silder-inner silder-inner1">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona 
+                    </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -1201,17 +1118,17 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
+          <div class="swiper-slide">
             <a href="#">
-              <img src="assets/img/images/we3.png" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <img src="assets/img/images/bp2.png" alt="roamers-Gallery">
+              <div class="silder-inner silder-inner1">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona
+                    </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -1220,17 +1137,17 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
+          <div class="swiper-slide">
             <a href="#">
-              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <img src="assets/img/images/bp3.png" alt="roamers-Gallery">
+              <div class="silder-inner silder-inner1">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona 
+                    </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -1239,36 +1156,17 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
-            <a href="#">
-              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <div class="inner">
-                  <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
-                </div>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner">
-                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
-                    15, 22 2023</h4>
-                  <h4>Starts at <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="slider-item">
+          <div class="swiper-slide">
             <a href="#">
               <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <div class="silder-inner silder-inner1">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona 
+                    </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -1277,17 +1175,17 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
+          <div class="swiper-slide">
             <a href="#">
               <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
+              <div class="silder-inner silder-inner1">
                 <div class="inner">
                   <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
+                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona
+                    </h4>
                 </div>
                 <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
+                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, </p>
                 <div class="inner">
                   <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
                     15, 22 2023</h4>
@@ -1296,37 +1194,19 @@
               </div>
             </a>
           </div>
-          <div class="slider-item">
-            <a href="#">
-              <img src="assets/img/images/up-coming1.webp" alt="roamers-Gallery">
-              <div class="silder-inner">
-                <div class="inner">
-                  <h3>12 DAYS / 11 NIGHTS</h3>
-                  <h4><img src="assets/img/images/loc1.svg" alt="second location-icon"><strong> EX- </strong>Barcelona -
-                    Madrid</h4>
-                </div>
-                <h2>Flashpack Spain</h2>
-                <p><img src="assets/img/images/loc.svg" alt="location-icon">Barcelona, Ibiza, Valencia, Madrid</p>
-                <div class="inner">
-                  <h4 style="padding-right: 20px;"><img src="assets/img/images/date.svg" alt="second location-icon">Jun
-                    15, 22 2023</h4>
-                  <h4>Starts at <span>₹75,000</span> </h4>
-                </div>
-              </div>
-            </a>
-          </div>
+  
+          <!-- Add more swiper-slide elements for additional images -->
         </div>
-        <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
   </section>
-
-  <!-- *****  short break trips  end***** -->
+  <!--====== quotes End ======-->
 
 
   <!-- ***** quotes start ***** -->
-  <section class="quotes mt-60">
+  <section class="quotes pt-60">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6">
@@ -1361,7 +1241,8 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="btn" style="margin: 27px 20px;">Customize Your Trips</a>
+            <a href="#" class="btn" style="margin: 27px 0px;
+            background: url(assets/img/images/we1.png) #0b0b0b 50% / cover no-repeat !important;">Customize Your Trips</a>
           </div>
         </div>
         <div class="col-md-6">
@@ -1387,152 +1268,140 @@
   <!--====== quotes End ======-->
 
 
-  <!--====== SIMILER TRIP Start ======-->
-
-  <!--====== SIMILER TRIP END ======-->
-
-  <!--====== FOOTER START======-->
-  <footer class="footer-section">
-    <div class="container">
-      <!-- <div class="footer-above">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="footer-above-content pe-4">
-              <div>
-                <img src="assets/img/images/icon-headphone.png" alt="Romer-footer images">
-                <span>
-                  Need any support for <br> tour & travels ?
-                </span>
-              </div>
-              <div>
-                <a href="#"><i class="fa-solid fa-arrow-up-long"></i></a>
-              </div>
+<!--====== FOOTER START======-->
+<footer class="footer-section">
+  <div class="container">
+    <!-- <div class="footer-above">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer-above-content pe-4">
+            <div>
+              <img src="assets/img/images/icon-headphone.png" alt="Romer-footer images">
+              <span>
+                Need any support for <br> tour & travels ?
+              </span>
             </div>
-          </div>
-          <div class="col-md-6 ps-4">
-            <div class="footer-above-content">
-              <div>
-                <img src="assets/img/images/icon-travel.png" alt="Romer-footer images">
-                <span>
-                  Ready to Get Started <br> With Vacations!
-                </span>
-              </div>
-              <div>
-                <a href="#"><i class="fa-solid fa-arrow-up-long"></i></a>
-              </div>
+            <div>
+              <a href="#"><i class="fa-solid fa-arrow-up-long"></i></a>
             </div>
           </div>
         </div>
-      </div> -->
-      <div class="footer-content py-4 py-md-5">
-        <div class="row">
-          <div class=" col-lg-5 my-40">
-            <div class="footer-widget">
-              <div class="footer-logo">
-                <a href="index.html"><img src="assets/img/Logo/Roamers Logo final-01.png" class="img-fluid"
-                    alt="logo"></a>
-              </div>
-              <div class="footer-text">
-                <p>
-                  Thank you for choosing our travel site. We are dedicated to providing you with exceptional service and unforgettable travel experiences. Whether you're planning your dream vacation or seeking inspiration for your next adventure, our site is here to assist you every step of the way.
-                 </p>
-              </div>
-              <div class="footer-social-icon">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              </div>
+        <div class="col-md-6 ps-4">
+          <div class="footer-above-content">
+            <div>
+              <img src="assets/img/images/icon-travel.png" alt="Romer-footer images">
+              <span>
+                Ready to Get Started <br> With Vacations!
+              </span>
+            </div>
+            <div>
+              <a href="#"><i class="fa-solid fa-arrow-up-long"></i></a>
             </div>
           </div>
-          <div class=" col-lg-3 col-4 ">
-            <div class="footer-widget">
-              <div class="footer-widget-heading">
-                <h3>Useful Links</h3>
-              </div>
-              <ul class="p-0">
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Community blog</a></li>
-                <li><a href="#"> Work with us</a></li>
-                <li><a href="#">Privacy policy</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
+        </div>
+      </div>
+    </div> -->
+    <div class="footer-content pt-5 ">
+      <div class="row">
+        <div class=" col-lg-5 my-40">
+          <div class="footer-widget">
+            <div class="footer-logo">
+              <a href="index.html"><img src="assets/img/Logo/Roamers Logo final-01.png" class="img-fluid"
+                  alt="logo"></a>
             </div>
-          </div>
-          <!-- <div class=" col-lg-4 col-md-6 mb-50">
-            <div class="footer-widget">
-              <div class="footer-widget-heading">
-                <h3>Newsletter</h3>
-              </div>
-              <div class="footer-text mb-25">
-                <p>
-                  Subscribe our newsletter to get our latest update & news.
-                </p>
-              </div>
-              <div class="subscribe-form">
-                <form action="#">
-                  <input type="text" placeholder="Email Address">
-                  <button><i class="fab fa-telegram-plane"></i></button>
-                </form>
-              </div>
-              <p class="newslet">
-                <i class="fa-regular fa-circle-check"></i> I agree to all terms and policies
+            <div class="footer-text">
+              <p>
+                                  Thank you for choosing our travel site. We are to providing you with exceptional service and unforgettable travel experiences. Whether you're planning  dream vacation or seeking inspiration for your next adventure, our site is here to assist you every step of the way.
               </p>
             </div>
-          </div> -->
-          <div class=" col-lg-4 col-8 ">
-            <div class="footer-widget">
-              <div class="footer-widget-heading">
-                <h3>Contact</h3>
-              </div>
-            <div>
-              <div class="footer-contact-item">
-                <span><i class="fa-solid fa-phone"></i></span>
-                <div class="fc-inner">
-                  <p>
-                    Drop a Line
-                  </p>
-                  <h3>+91 0000000000</h3>
-                </div>
-              </div>
-              <div class="footer-contact-item">
-                <span><i class="fa-solid fa-envelope"></i></span>
-                <div class="fc-inner">
-                  <p>
-                    Email Address
-                  </p>
-                  <h3>roamers@gmail.com</h3>
-                </div>
-              </div>
-              <div class="footer-contact-item">
-                <span ><i class="fa-solid fa-location-dot"></i></span>
-                <div class="fc-inner">
-                  <p>
-                    Visit office
-                  </p>
-                  <h3>583 Main Street, NY, USA</h3>
-                </div>
-              </div>
+            <div class="footer-social-icon">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>
-        </div>
-      </div>
-    </div>
-    <div class="copyright-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center text-lg-left">
-            <div class="copyright-text">
-              <p>Copyright &copy; 2023, All Right Reserved <a href="https://codepen.io/anupkumar92/">Romers</a></p>
+      
+        <div class=" col-lg-2 col-md-6 col-6 my-40">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Useful Links</h3>
             </div>
+            <ul class="p-0">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Community blog</a></li>
+              <li><a href="#"> Work with us</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class=" col-lg-2 col-md-6 col-6 my-40 d-none d-md-block">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Trip Links</h3>
+            </div>
+            <ul class="p-0">
+              <li><a href="#">Upcoming Trips</a></li>
+              <li><a href="#">Backpacking Trips</a></li>
+              <li><a href="#"> Short Trips</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-6 col-6 my-40">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Contact</h3>
+            </div>
+            <div class="fci-container">
+            <div class="footer-contact-item">
+              <span><i class="fa-solid fa-phone"></i></span>
+              <div class="fc-inner">
+                <p>
+                  Drop a Line
+                </p>
+                <h3>+91 0000000000</h3>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <div class="fc-inner">
+                <p>
+                  Email Address
+                </p>
+                <h3>roamers@gmail.com</h3>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span ><i class="fa-solid fa-location-dot"></i></span>
+              <div class="fc-inner">
+                <p>
+                  Visit office
+                </p>
+                <h3>583 Main Street, NY, USA</h3>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+  <div class="copyright-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center text-lg-left">
+          <div class="copyright-text">
+            <p>Copyright &copy; 2023, All Right Reserved <a href="https://codepen.io/anupkumar92/">Romers</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
-  <!--====== FOOTER END======-->
+<!--====== FOOTER END======-->
 
   <!-- ***** All jQuery Plugins ***** -->
 
@@ -1554,7 +1423,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- <script src="assets/js/main.js"></script> -->
   <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/active.js"></script>
 </body>
 </html>
