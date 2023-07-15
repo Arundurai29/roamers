@@ -22,7 +22,7 @@
 
 body {
   font-family: "Heebo", sans-serif;
-  font-size: 14px !important;
+  font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: #222;
@@ -133,7 +133,7 @@ ul li {
   padding-top: 10px;
 }
 .pt-10 {
-  padding-top: 10px;
+  padding-top: 5px;
 }
 .mt-60 {
   margin-top: 60px;
@@ -162,7 +162,7 @@ img {
   font-weight: 700;
   font-size: 32px;
   text-transform: capitalize;
-  margin: 0 0 3rem;
+  margin: 0 0 2rem;
   color: #1f2327;
   line-height: 1.4;
   text-align: center;
@@ -209,7 +209,7 @@ img {
   margin-left: 20px;
 }
 .fs-list li {
-  margin: 0px 5px;
+  margin: 0px 13px;
 }
 .fs-list a {
   color: #4ec0db;
@@ -981,6 +981,7 @@ ul {
 .footer-social-icon i {
   height: 40px;
   width: 40px;
+  font-size: 30px;
   text-align: center;
   line-height: 38px;
   border-radius: 50%;
@@ -1051,8 +1052,11 @@ ul {
   transform: rotate(-6deg);
 }
 .copyright-area {
-  background: #0a0a0a99;
-  padding: 25px 0;
+  background: #094067db;
+  padding: 10px 0;
+  display: grid;
+  place-items: center;
+  place-content: center;
 }
 .copyright-text p {
   margin: 0;
@@ -1264,7 +1268,7 @@ input[type="checkbox"]::backdrop {
   position: absolute;
   inset: 0;
   content: "";
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .home-behind-content {
   text-align: center;
@@ -1443,11 +1447,14 @@ html {
   color: #fff;
   margin: 10px 0px;
 }
-
+.testimonial {
+  margin-top: 157px;
+}
 .testimonials {
   background: #fff;
   text-align: center;
   width: 95%;
+  padding-bottom: 0 !important;
   max-width: 600px;
   padding: 2rem;
   margin: 68px 35px 20px 35px;
@@ -1501,11 +1508,13 @@ html {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 }
 .slide-box img {
-  max-width: 60px;
-  border-radius: 50%;
+  max-width: 75%;
+  object-fit: contain;
+  height: 300px;
 }
 .slide-box .name {
   font-size: 1rem;
+  margin-top: 30px;
 }
 .slide-box .job {
   font-size: 0.7rem;
@@ -1537,6 +1546,7 @@ html {
   display: flex;
   justify-content: center;
   margin-right: 32px;
+  margin-bottom: 0;
   align-items: center;
 }
 .star i {
@@ -1555,10 +1565,12 @@ html {
 .form-section input {
   font-size: 15px;
   font-weight: 300;
-  background-color: #fff;
-  border: 2px solid #0940675e;
+  background-color: #4ec0db1f;
+  border: 2px solid #4ec0db1f;
   border-radius: 10px;
   padding: 12px 20px;
+  font-family: "Heebo";
+  font-weight: 400;
   color: #777;
   margin-bottom: 0;
   height: 50px;
@@ -1578,11 +1590,12 @@ html {
 .form-section a > i {
   margin: 0px 10px 0px 0px;
 }
-input:focus {
-  outline: 1px solid !important;
-  border: none !important;
+.form-section input:focus {
+  outline: 0px solid !important;
+  border: 2px solid #4ec1db0d !important;
   -moz-outline-style: none !important;
   border-color: none !important;
+  background-color: #4ec0db0f;
   box-shadow: none !important;
 }
 .quotes {
@@ -1808,12 +1821,15 @@ textarea {
   letter-spacing: 0px;
 }
 .swiper-slide img {
-  max-height: 200px;
+  height: 210px;
   object-fit: cover !important;
+  border-radius: 0.8vw;
 }
 .swiper-slide a {
   width: 90%;
   transform: scale(1);
+  background: #ffff;
+  border-radius: 0.8vw 0.8vw 0px 0vw;
 }
 .swiper-slide a:hover {
   transform: scale(1.03);
@@ -1918,4 +1934,83 @@ textarea {
   margin-top: 26px;
   width: 40px;
   height: 100%;
+}
+.ml11 {
+  font-weight: 800;
+  font-size: 3.5em;
+  margin-top: 50px;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 {
+  top: 0;
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+  color: #fff;
+  letter-spacing: 7px;
+  font-size: 70px;
+}
+.home-row {
+  margin-top: 100px !important;
+}
+.inner2 img {
+  margin-right: 0px !important;
+}
+.categories {
+  display: flex;
+  padding: 30px 20px;
+  background: #ffff;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+.categories img {
+  width: 45px;
+  height: 45px;
+}
+.categories-inner {
+  margin: 0px 0px 0px 20px;
+}
+.categories-inner h2 {
+  color: #094067;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+.categories-inner p {
+  color: #094067;
+  font-size: 14px;
+  text-align: justify;
+  margin-bottom: 0;
+  line-height: 21px;
+}
+.categories-container {
+  padding: 40px 0px;
+}
+.footer-social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
 }
