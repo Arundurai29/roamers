@@ -380,4 +380,30 @@
     max-height: 150px;
     object-fit: cover !important;
   }
+  .categories-inner h2 {
+    color: #094067;
+    font-size: 14px;
+    margin-bottom: 6px;
+    text-align: center;
+    margin: 10px 0px;
+  }
+  .categories-inner {
+    margin: 0;
+  }
+  .categories {
+    display: grid;
+    padding: 20px 5px;
+    background: #ffff;
+    border-radius: 10px;
+    place-items: center;
+    align-items: center;
+    margin: 0px 0px;
+  }
+  .categories-inner p {
+    color: #094067;
+    font-size: 11px;
+    text-align: justify;
+    margin-bottom: 0;
+    line-height: 19px;
+  }
 }
