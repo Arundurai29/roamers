@@ -1,4 +1,8 @@
 @media (max-width: 600px) {
+  .home {
+        padding: 100px 0px 100px 0px;
+        background: url(assets/img/bg/website-cover-mobile.png) !important;
+      }
   .home-behind-content {
     font-size: 74px;
   }
