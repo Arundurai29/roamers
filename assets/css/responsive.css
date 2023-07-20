@@ -1,11 +1,4 @@
 @media (max-width: 600px) {
-  .home {
-    padding: 160px 0px 220px 0px;
-    background: url(/assets/img/bg/website-cover-mobile.png) !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center !important;
-  }
   .home-behind-content {
     font-size: 74px;
   }
@@ -91,7 +84,7 @@
     font-size: 14px;
   }
   .trip-home h1 {
-    font-size: 34px;
+    font-size: 28px;
     line-height: 40px;
   }
   .col-6 {
@@ -118,6 +111,16 @@
   .tabgroup div {
     padding: 20px;
   }
+  .trip-inner h3 {
+    width: 50px;
+    height: 50px;
+  }
+  .trip-inner h3 > i {
+    font-size: 18px;
+  }
+  .accordion::before {
+    height: 96%;
+  }
   .ilt-up {
     padding: 0px 0px 50px !important;
   }
@@ -125,8 +128,10 @@
     padding: 15px !important;
   }
   .accordion-button {
-    font-size: 16px !important;
+    font-size: 14px !important;
+    padding: 10px 20px !important;
   }
+
   .sticky-sidebar {
     padding: 0px 20px;
   }
@@ -155,7 +160,7 @@
     font-size: 18px !important;
   }
   .home-icon-content h4 {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
 
   .home-icon-content img {
@@ -230,7 +235,8 @@
     color: #ffffff;
   }
   .upcoming-trips {
-    margin-top: 30px;
+    margin-top: 0px;
+    padding-top: 20px;
   }
   .footer-text p {
     text-align: center;
@@ -239,6 +245,12 @@
   .footer-logo {
     margin-bottom: 10px;
     text-align: center;
+  }
+  .py-60 {
+    padding: 30px 0px;
+  }
+  .travelgram {
+    padding: 40px 0px;
   }
   .footer-social-icon {
     display: flex;
@@ -348,14 +360,15 @@
   .sc1 {
     width: 100% !important;
   }
-  .first-section {
-    display: block;
-  }
+
   .fs1 {
-    padding: 20px 0px 0px 10px;
+    padding: 0px 0px 0px 10px;
+  }
+  .fs1 a {
+    font-size: 16px;
   }
   .fs1 p {
-    font-size: 10px;
+    display: none;
   }
   .fs2 {
     padding: 10px 0px 0px;
@@ -377,8 +390,12 @@
     width: 98%;
   }
   .swiper-slide img {
-    max-height: 150px;
+    max-height: 200px !important;
     object-fit: cover !important;
+    border-radius: 3.8vw;
+  }
+  .swiper-slide a {
+    border-radius: 3.8vw 3.8vw 0px 0vw;
   }
   .categories-inner h2 {
     color: #094067;
@@ -392,12 +409,15 @@
   }
   .categories {
     display: grid;
-    padding: 20px 5px;
+    padding: 20px 10px;
     background: #ffff;
     border-radius: 10px;
     place-items: center;
     align-items: center;
     margin: 0px 0px;
+  }
+  .quotes img {
+    height: 200px;
   }
   .categories-inner p {
     color: #094067;
@@ -405,5 +425,36 @@
     text-align: justify;
     margin-bottom: 0;
     line-height: 19px;
+  }
+  .itinerary-logo p {
+    font-size: 12px;
+    margin: 10px 5px;
+  }
+  .itinerary-logo-content p {
+    font-size: 10px;
+    padding: 0px 10px;
+  }
+  .acc-inner li {
+    font-size: 12px;
+  }
+  .ml11 .letter {
+    display: inline-block;
+    line-height: 1em;
+    color: #fff;
+    letter-spacing: 7px;
+    font-size: 40px;
+  }
+  .categories-container {
+    padding: 40px 0px 0px;
+  }
+  .testimonial {
+    margin-top: 50px;
+  }
+  #regForm {
+    background-color: #ffff;
+    margin: 10px 0px;
+    padding: 0px;
+    width: 100%;
+    min-width: 300px;
   }
 }
