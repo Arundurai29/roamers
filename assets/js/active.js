@@ -274,3 +274,16 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+    // :: 1.0 PRELOADER ACTIVE CODE
+    $(window).on("load", function () {
+      $(".loader").addClass("loader");
+  
+      if ($(".loader").hasClass("loader")) {
+        $("#preloader")
+          .delay(900)
+          .queue(function () {
+            $(this).remove();
+          });
+      }
+    });
+  
