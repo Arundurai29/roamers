@@ -1055,16 +1055,21 @@ ul {
   background-position: 100% 100%;
 }
 .footer-logo {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 .footer-logo img {
-  max-width: 100px;
+  max-width: 150px;
 }
 .footer-text p {
   margin-bottom: 14px;
   font-size: 12px;
   color: #ffffff;
   line-height: 28px;
+}
+.fborder {
+  border: 2px solid #fff !important;
+  border-top: 0px !important;
+  border-bottom: 0px !important;
 }
 .footer-social-icon span {
   color: #fff;
@@ -1364,7 +1369,7 @@ input[type="checkbox"]::backdrop {
 }
 .home {
   padding: 180px 0px 220px 0px;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   background-position: center;
   /* height: 100vh;
@@ -1562,7 +1567,7 @@ html {
   width: 95%;
   padding-bottom: 0 !important;
   max-width: 600px;
-  padding: 2rem;
+  padding: 2rem !important;
   margin: 68px 35px 20px 35px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
 }
@@ -1614,8 +1619,8 @@ html {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 }
 .slide-box img {
-  max-width: 75%;
-  object-fit: contain;
+  max-width: 100%;
+  object-fit: cover;
   height: 300px;
 }
 .slide-box .name {
@@ -2063,7 +2068,7 @@ textarea {
 .ml11 {
   font-weight: 800;
   font-size: 3.5em;
-  margin-top: 150px;
+  margin-top: 120px;
 }
 
 .ml11 .text-wrapper {
@@ -2094,11 +2099,11 @@ textarea {
   line-height: 1em;
   color: #fff;
   letter-spacing: 7px;
-  font-size: 70px;
+  font-size: 50px;
   text-transform: uppercase;
 }
 .home-row {
-  margin-top: 70px !important;
+  margin-top: 100px !important;
 }
 .inner2 img {
   margin-right: 0px !important;
@@ -2110,7 +2115,8 @@ textarea {
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-  margin: 10px 0px;
+  margin: 10px 0px !important;
+  min-height: 170px;
 }
 .categories img {
   width: 45px;
@@ -2132,7 +2138,7 @@ textarea {
   line-height: 21px;
 }
 .categories-container {
-  padding: 40px 0px;
+  padding: 40px 0px 0;
 }
 .footer-social-icon {
   display: flex;
@@ -2159,6 +2165,7 @@ textarea {
   background-size: cover !important;
   background-position: center;
   height: 100vh;
+  background-position-y: -60px !important;
   /* margin-top: -127px;  */
 }
 
