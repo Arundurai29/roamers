@@ -1,11 +1,4 @@
 @media (max-width: 600px) {
-  .home {
-        padding: 100px 0px 100px 0px;
-        background: url(/assets/img/bg/website-cover-mobile.png) !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-      }
   .home-behind-content {
     font-size: 74px;
   }
