@@ -184,17 +184,7 @@ btnRight.addEventListener("click", moveRight);
 window.addEventListener("resize", moveSlider);
 
 
-var navbar = document.querySelector('nav')
 
-window.onscroll = function() {
-
-  // pageYOffset or scrollY
-  if (window.scrollY  > 100) {
-    navbar.classList.add('scrolled')
-  } else {
-    navbar.classList.remove('scrolled')
-  }
-}
 
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -228,9 +218,7 @@ window.addEventListener('DOMContentLoaded', function() {
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-      1550: {
-        slidesPerView: 4,
-      },
+     
       640: {
         slidesPerView: 3,
       },
@@ -244,7 +232,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.ml11 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+textWrapper.innerHTML = textWrapper.textContent.replace(/([^]|\w)/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: true})
   .add({
@@ -274,6 +262,8 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+
     // :: 1.0 PRELOADER ACTIVE CODE
     $(window).on("load", function () {
       $(".loader").addClass("loader");
