@@ -267,6 +267,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 .fs1 {
   display: flex;
@@ -282,7 +283,7 @@ img {
   margin-right: 20px;
 }
 .fs1 p {
-  margin: 0;
+  margin: 0 20px;
   color: #ffff;
 }
 .fs1 i {
@@ -327,6 +328,11 @@ img {
 .navbar-brand {
   width: 100px;
 }
+.navbar-brand img {
+  width: 126px;
+  height: 60px;
+}
+
 .navbar {
   background: #09406700;
   z-index: 999;
@@ -1066,11 +1072,11 @@ ul {
   color: #ffffff;
   line-height: 28px;
 }
-.fborder {
+/* .fborder {
   border: 2px solid #fff !important;
   border-top: 0px !important;
   border-bottom: 0px !important;
-}
+} */
 .footer-social-icon span {
   color: #fff;
   display: block;
@@ -2367,8 +2373,7 @@ transform: translateY(0%);
 }
 
 .faq {
-  padding: 0px 200px;
-  margin: 60px;
+  padding: 60px 200px;
 }
 
 .similer-trip {
@@ -2469,7 +2474,7 @@ h6 {
 }
 
 .container-fluid {
-  width: 95%;
+  width: 95% !important;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
@@ -2482,4 +2487,19 @@ h6 {
 
 .sta {
   font-weight: 400 !important;
+}
+
+.menu-none {
+  display: none !important;
+}
+.menu-none1 {
+  display: inline-flex !important;
+}
+.swiper-button-next1,
+.swiper-button-prev1 {
+  border-radius: 10px !important;
+  width: 25px !important;
+  height: 41px !important;
+  background: #4ec0db !important;
+  top: 72% !important;
 }

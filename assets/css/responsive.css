@@ -457,4 +457,19 @@
     width: 100%;
     min-width: 300px;
   }
+  .fs-list li {
+    margin: 0px 10px;
+  }
+  .faq {
+    margin: -2px;
+  }
+  .first-section {
+    padding: 0;
+  }
+  .menu-none {
+    display: block !important;
+  }
+  .menu-none1 {
+    display: none !important;
+  }
 }
